@@ -288,3 +288,15 @@ body,
 .swiper-wrapper {
     margin-bottom: 20px !important;
 }   
+
+@media (max-width: 500px) {
+    .fa-phone:before {
+        content: "" !important;
+        display: none !important;
+    }
+}
+
+.boxShadow{
+    box-shadow: 3px 3px 5px #00000063;
+    border-radius: 24px;
+}

@@ -14,9 +14,9 @@
 
 <body>
     <header
-        class="w-[80vw] mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%]">
-        <img src="assets/images/home/logo.png" alt="logo" class="w-[17%]">
-        <nav class="flex items-center !text-white">
+        class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] md:pt-0 pt-8 md:px-0 px-4">
+        <img src="assets/images/home/logo.png" alt="logo" class="md:w-[17%] w-44">
+        <nav class="hidden md:flex items-center !text-white">
             <div>
                 <a href="#" class="pl-6 pb-1 text-[var(--theme)]">Home</a>
             </div>
@@ -54,7 +54,7 @@
                 <a href="#" class="pl-6">Contact Us</a>
             </div>
         </nav>
-        <div class="flex gap-2 items-center">
+        <div class="md:flex hidden gap-2 items-center">
             <button
                 class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
                 Get Started Today
@@ -68,25 +68,84 @@
                 <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
             </div>
         </div>
+
+        <div onclick="handleMobileMenu()"
+            class="flex md:hidden h-11 border-2 w-16 gradientBg justify-center items-center">
+            <i class="fa fa-bars text-white text-xl" aria-hidden="true"></i>
+        </div>
     </header>
+    <div id="mobileMenu"
+        class="!h-0 !overflow-hidden !transition-all md:hidden !duration-700 w-[92%] left-[50%] right-[50%] -translate-x-[50%] absolute top-32 bg-[url(assets/images/home/menu-bg.jpg)] bg-cover bg-no-repeat bg-center rounded-lg text-black space-y-7">
+        <div class="pt-8">
+            <a href="#" class="pl-6 pb-1 text-[var(--theme)]">Home</a>
+        </div>
+        <div>
+            <a href="#" class="pl-6">About Us</a>
+        </div>
+        <div id="dropCont" class="relative !z-50 group">
+            <a href="#" class="pl-6 flex items-center">
+                Services
+                <i class="fa fa-angle-down ml-2"></i>
+            </a>
+            <!-- Dropdown Menu -->
+            <div id="dropMob"
+                class="absolute !hidden flex-col bg-black text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[90vw]">
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Writing</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Editing</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Cover Design</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Cover Design</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Writing</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Marketing</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography Writing</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir Writing</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Printing</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Trailer</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author Website</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Illustration</a>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="pl-6">Blog</a>
+        </div>
+        <div>
+            <a href="#" class="pl-6">Contact Us</a>
+        </div>
+
+        <div class="md:hidden flex gap-1 items-center mt-4 w-[95%] mx-auto">
+            <button
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-black rotate-90">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between text-black">
+                <div class="text-red-500 text-lg">Live Chat</div>
+                <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+            </div>
+        </div>
+    </div>
 
 
     <main
-        class="bg-[url(assets/images/home/banner-img.png)] h-auto !max-h-[250dvh] bg-center bg-no-repeat bg-cover pt-[173px] pb-[500px]">
-        <section class="w-[80vw] mx-auto grid md:grid-cols-2 items-center text-white">
+        class="bg-[url(assets/images/home/banner-img.png)] h-auto md:!max-h-[250dvh] max-h-[200vh] bg-center bg-no-repeat bg-cover pt-[173px] pb-[500px] min-h-[180vh]">
+        <section class="md:w-[80vw] w-[92vw] mx-auto grid md:grid-cols-2 md:gap-0 gap-12 items-center text-white">
             <div>
                 <div class="flex items-center gap-1">
                     <img src="assets/images/home/pen.png" alt="Pen">
                     <h5 class="text-[var(--theme)]">Want to Be an Author?</h5>
                 </div>
-                <h1 class="text-[40px] leading-[1.2] mt-1 font-medium">Unlock the Delight of <span
+                <h1 class="md:text-[40px] text-3xl leading-[1.2] mt-1 font-medium">Unlock the Delight of <span
                         class="text-[var(--theme)]">Bringing Your Book to Life: Allow Our Book Publishing</span>
                     Services to Lead You Toward Success</h1>
                 <p class="mt-2 text-sm">
                     We offer you the chance to make your mark in the book world by publishing your manuscripts into an
                     actual book. Join our premium online book publishing services today!
                 </p>
-                <div class="flex gap-20 items-center mt-5">
+                <div class="flex md:gap-20 gap-5 flex-wrap items-center mt-5">
                     <button
                         class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
                         Get Started Today
@@ -104,7 +163,8 @@
                     </div>
                 </div>
             </div>
-            <form class="w-[80%] ml-auto px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder rounded-xl relative">
+            <form
+                class="md:w-[80%] w-[90%] mx-auto md:ml-auto md:mr-0 px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder rounded-xl relative">
                 <h1 class="text-2xl font-light">
                     Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span><br> Discount
                 </h1>
@@ -144,7 +204,7 @@
                     class="absolute -right-8 -top-8 rotate-[22deg] h-28 object-contain">
             </form>
         </section>
-        <div class="mt-4 w-[80vw] mx-auto">
+        <div class="md:mt-4 mt-11 md:w-[80%] w-[90%] mx-auto">
             <img src="/assets/images/home/banner-inner-img.jpg" alt="">
         </div>
         <div class="marquee">
@@ -167,7 +227,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5 md:w-[50vw] mx-auto">
+        <div class="md:mt-5 mt-12 md:w-[50vw] mx-auto">
             <h1 class="text-[40px] text-center font-[500] leading-tight">
                 Dream Big On Becoming The <span class="text-[var(--theme2)]">Next Bestseller With Expert Online</span>
                 Book Publishing Services
@@ -175,13 +235,13 @@
             <p class="text-center mt-2 text-[14px]">Publish your book through us and we promise to make it worthwhile.
             </p>
         </div>
-        <section id="about" class="mt-8 grid grid-cols-2 items-center gap-5 w-[80vw] mx-auto">
+        <section id="about" class="mt-8 md:mt-0 grid md:grid-cols-2 items-center md:gap-5 md:w-[80%] w-[90%] mx-auto">
             <div class="">
                 <div class="flex items-end gap-2">
                     <img src="/assets/images/home/pen-about.png" alt="pen">
                     <h5 class="text-[var(--theme2)]">Book Publishing Services</h5>
                 </div>
-                <h3 class="text-[30px] font-[700] leading-[42px] mt-4 ">Book publishing <span
+                <h3 class="text-[30px] font-[600] leading-[42px] mt-4 ">Book publishing <span
                         class="capitalize text-[var(--theme2)]">services at Its Very</span> Best Right
                     Here.</h3>
                 <p class="mt-3 text-sm">
@@ -210,15 +270,15 @@
             </div>
             <div class="">
                 <dotlottie-player src="https://lottie.host/1b94d635-f280-4994-a66a-da1c90a9b321/g7l2MJ3XjV.json"
-                    background="transparent" speed="1" style="width: 600px; height: auto;" loop="" autoplay=""
-                    class=""></dotlottie-player>
+                    background="transparent" speed="1" loop="" autoplay=""
+                    class="md:w-[600px] h-auto w-[90%]"></dotlottie-player>
             </div>
         </section>
     </main>
 
-    <section class="mt-44 grid grid-cols-2 items-center gap-4 w-[88.9vw] mr-auto">
-        <img src="/assets/images/home/about.png" alt="About Books" class="w-[935px]">
-        <div>
+    <section class="mt-44 grid md:grid-cols-2 items-center gap-4 w-[88.9vw] md:mr-auto md:ml-0 mx-auto">
+        <img src="/assets/images/home/about.png" alt="About Books" class="w-[935px] md:order-1 order-2">
+        <div class="md:order-2 order-1 md:mt-0 mt-80">
             <div class="flex items-end gap-2">
                 <img src="/assets/images/home/pen-about.png" alt="pen">
                 <h5 class="text-[var(--theme2)]">About Company</h5>
@@ -288,14 +348,13 @@
         </div>
     </section>
 
-    <section class="mt-28 w-[82vw] mx-auto">
+    <section class="mt-28 w-[82%] mx-auto">
         <h1 class="w-fit text-center text-[40px] capitalize mx-auto font-[600]">
             Services Rendered by <br>
             <span class="text-[var(--theme2)] leading-[50px]">Best Book Publisher</span>
         </h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <!-- Ebook Writing - Correctly Added Already -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -318,7 +377,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Ebook Editing -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -341,7 +399,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Ebook Proofreading -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -364,7 +421,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Ebook Formatting -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -387,7 +443,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Biography Marketing -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -410,7 +465,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Biography Writing -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -433,7 +487,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Ghostwriting Services -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -456,7 +509,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Ebook Cover Design -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -479,7 +531,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Memoir -->
                 <div class="swiper-slide">
                     <div class="servicesBox">
                         <div class="iconBox">
@@ -509,11 +560,12 @@
     </section>
 
     <section
-        class="w-[83vw] mx-auto mt-20 py-7 bg-[url(assets/images/home/counter-bg.png)] bg-no-repeat bg-center bg-cover font-family text-white rounded-lg">
+        class="md:w-[83%] w-[90%] mx-auto mt-20 py-7 bg-[url(assets/images/home/counter-bg.png)] bg-no-repeat bg-center bg-cover font-family text-white rounded-lg md:px-0 px-[3vw]">
         <h1 class="text-[34px] font-[600] mt-3 pt-5 text-center">Figures that Speak Volume</h1>
-        <p class="text-center text-[14px] max-w-[70%] mx-auto mt-2">Our achievements are a testament to our dedication,
+        <p class="text-center text-[14px] md:max-w-[70%] mx-auto mt-2">Our achievements are a testament to our
+            dedication,
             and we consistently work towards enhancing our performance to surpass the expected standards.</p>
-        <div class="grid grid-cols-4 mt-8">
+        <div class="grid md:grid-cols-4 grid-cols-2 md:gap-0 gap-16 mt-8">
             <div>
                 <div class="w-fit mx-auto">
                     <h4 class="font-[600] text-[var(--theme)] text-[32px] text-center">672</h4>
@@ -541,37 +593,374 @@
         </div>
     </section>
 
-    <section class="w-[79.4vw] mx-auto mt-24">
+    <section class="md:w-[79.4%] w-[90%] mx-auto mt-24">
         <h1 class="w-fit text-center text-[40px] capitalize mx-auto font-[600]">
             Take A Look at <span class="text-[var(--theme2)]">Our Portfolio</span>
         </h1>
         <p class="text-[16px] font-[400] text-center mt-2">At Best Book Publisher, we find satisfaction in our extensive
             portfolio, demonstrating our proficiency across a wide array of industries and niches.</p>
-
-        <div class="flip">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slick-slide slick-current slick-active" data-slick-index="27" aria-hidden="false"
-                            style="width: 224px;">
-                            <div>
-                                <div class="col-sm-3" style="width: 100%; display: inline-block;">
-                                    <div class="perspective-29">
-                                        <div class="book-flip-29">
-                                            <div class="book-30"></div>
-                                            <div class="left-30"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- .slick-slide -->
-                    </div><!-- .swiper-slide -->
-                </div><!-- .swiper-wrapper -->
-            </div><!-- .mySwiper -->
-        </div><!-- .flip -->
+        <div class="swiper mySwiper mt-11">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/1.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/2.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/3.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/4.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/5.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/6.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/7.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/8.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/9.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/10.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/11.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/12.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/13.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/14.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/15.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/16.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/17.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/18.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/19.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/20.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/21.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/22.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/23.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/bookCover/24.webp" alt="Book Cover"
+                        class="w-[95%] h-auto rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
 
     </section>
 
+    <section class="mt-16 bg-[url(assets/images/home/amazon-sec-bg.png)] bg-center min-h-screen flex items-center">
+        <div class="w-[94%] mx-auto grid items-center md:grid-cols-10 md:gap-5 gap-8 ">
+            <div class="md:col-span-4 !col-span-1 pr-5">
+                <h1 class="w-fit text-[40px] capitalize font-[600]">
+                    Our Published <span class="text-[var(--theme2)]">Work</span>
+                </h1>
+                <p class="text-[14px] font-[400] mt-2">With a diverse range of genres and topics, our portfolio reflects
+                    the depth of our expertise. Explore our portfolio to witness the success stories we've crafted for
+                    our clients, and discover how our professional book writers can bring your vision to life.</p>
+                <button
+                    class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center mt-5">
+                    Get Started Today
+                    <i class="fa fa-angle-right"></i>
+                </button>
+                <div class="flex flex-col justify-between text-black mt-5">
+                    <div class="text-red-500 text-lg">Live Chat</div>
+                    <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+                </div>
+            </div>
+            <div class="md:col-span-6 !col-span-1">
+                <div class="swiper mySwiper2 mt-11">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide relative">
+                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
+                                <div class="flex gap-5 items-center">
+                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
+                                        alt="Profile Picture">
+                                    <div>
+                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
+                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
+                                    This book takes readers on a journey of growth, challenges, failures, and
+                                    triumphs From overcoming adversity to taking risks and forging meaningful
+                                    relationships. My story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-12">
+                                    <h5 class="flex gap-2 font-medium">Published on <img
+                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                </div>
+                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                        </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
+                                <div class="flex gap-5 items-center">
+                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
+                                        alt="Profile Picture">
+                                    <div>
+                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
+                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
+                                    This book takes readers on a journey of growth, challenges, failures, and
+                                    triumphs From overcoming adversity to taking risks and forging meaningful
+                                    relationships. My story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-12">
+                                    <h5 class="flex gap-2 font-medium">Published on <img
+                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                </div>
+                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                        </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
+                                <div class="flex gap-5 items-center">
+                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
+                                        alt="Profile Picture">
+                                    <div>
+                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
+                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
+                                    This book takes readers on a journey of growth, challenges, failures, and
+                                    triumphs From overcoming adversity to taking risks and forging meaningful
+                                    relationships. My story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-12">
+                                    <h5 class="flex gap-2 font-medium">Published on <img
+                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                </div>
+                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                        </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
+                                <div class="flex gap-5 items-center">
+                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
+                                        alt="Profile Picture">
+                                    <div>
+                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
+                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
+                                    This book takes readers on a journey of growth, challenges, failures, and
+                                    triumphs From overcoming adversity to taking risks and forging meaningful
+                                    relationships. My story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-12">
+                                    <h5 class="flex gap-2 font-medium">Published on <img
+                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                </div>
+                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                        </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
+                                <div class="flex gap-5 items-center">
+                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
+                                        alt="Profile Picture">
+                                    <div>
+                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
+                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
+                                    This book takes readers on a journey of growth, challenges, failures, and
+                                    triumphs From overcoming adversity to taking risks and forging meaningful
+                                    relationships. My story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-12">
+                                    <h5 class="flex gap-2 font-medium">Published on <img
+                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                </div>
+                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                        </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
+                                <div class="flex gap-5 items-center">
+                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
+                                        alt="Profile Picture">
+                                    <div>
+                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
+                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
+                                    This book takes readers on a journey of growth, challenges, failures, and
+                                    triumphs From overcoming adversity to taking risks and forging meaningful
+                                    relationships. My story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-12">
+                                    <h5 class="flex gap-2 font-medium">Published on <img
+                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                </div>
+                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                        </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
+                                <div class="flex gap-5 items-center">
+                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
+                                        alt="Profile Picture">
+                                    <div>
+                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
+                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
+                                    This book takes readers on a journey of growth, challenges, failures, and
+                                    triumphs From overcoming adversity to taking risks and forging meaningful
+                                    relationships. My story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-12">
+                                    <h5 class="flex gap-2 font-medium">Published on <img
+                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                </div>
+                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                        </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
+                                <div class="flex gap-5 items-center">
+                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
+                                        alt="Profile Picture">
+                                    <div>
+                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
+                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
+                                    This book takes readers on a journey of growth, challenges, failures, and
+                                    triumphs From overcoming adversity to taking risks and forging meaningful
+                                    relationships. My story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-12">
+                                    <h5 class="flex gap-2 font-medium">Published on <img
+                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                </div>
+                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="md:w-[80%] w-[90%] mx-auto mt-24 grid md:grid-cols-2 items-center">
+        <div>
+            <div class="flex items-end gap-2">
+                <img src="/assets/images/home/pen-about.png" alt="pen">
+                <h5 class="text-[var(--theme2)]">Why Choose Us</h5>
+            </div>
+            <h3 class="text-[30px] font-[600] leading-[42px] mt-4 ">Why Select Our  <span
+                    class="capitalize text-[var(--theme2)]">Book Publishing Services </span>in USA?</h3>
+            <p class="mt-3 text-sm">
+                We believe in professionals who leverage their versatility and extensive experience across various academic disciplines, such as arts, business, technology, advertising, communications, social sciences, and engineering. Our publishers specialize in strategic planning, ideation, consulting, and proactive communication with clients to deliver a finely crafted product. At Best Book Publisher, we prioritize original publishing with precision to yield tangible results. Our best book publishing company is powered by experienced publishers, featuring a dedicated team of full-time publishers, managers, proofreaders, and quality assurance experts.
+
+
+            </p>
+            <div class="flex gap-20 items-center mt-5">
+                <button
+                    class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                    Get Started Today
+                    <i class="fa fa-angle-right"></i>
+                </button>
+                <div class="flex gap-2 items-center">
+                    <div
+                        class="flex justify-center items-center h-11 w-11 rounded-full border border-black !text-black rotate-90">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex flex-col justify-between text-black">
+                        <div class="text-lg">Live Chat</div>
+                        <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <dotlottie-player src="https://lottie.host/74bf35ff-d951-4ff1-a2e5-5e929f8a57e5/FVOllfZ9b4.json"
+                background="transparent" speed="1" loop="" autoplay=""
+                class="h-auto w-full mx-auto"></dotlottie-player>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
