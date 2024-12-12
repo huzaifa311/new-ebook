@@ -250,7 +250,7 @@
                     user-friendly and cost-effective solution for authors to have their creations published and made
                     available to a wide readership through well-known platforms like Google and Amazon, among others.
                 </p>
-                <div class="flex gap-20 items-center mt-5">
+                <div class="flex md:gap-20 gap-2 items-center mt-5">
                     <button
                         class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
                         Get Started Today
@@ -276,7 +276,7 @@
         </section>
     </main>
 
-    <section class="mt-44 grid md:grid-cols-2 items-center gap-4 w-[88.9vw] md:mr-auto md:ml-0 mx-auto">
+    <section class="md:mt-44 mt-80 grid md:grid-cols-2 items-center gap-4 w-[88.9vw] md:mr-auto md:ml-0 mx-auto">
         <img src="/assets/images/home/about.png" alt="About Books" class="w-[935px] md:order-1 order-2">
         <div class="md:order-2 order-1 md:mt-0 mt-80">
             <div class="flex items-end gap-2">
@@ -702,227 +702,260 @@
 
     </section>
 
-    <section class="mt-16 bg-[url(assets/images/home/amazon-sec-bg.png)] bg-center min-h-screen flex items-center">
-        <div class="w-[94%] mx-auto grid items-center md:grid-cols-10 md:gap-5 gap-8 ">
-            <div class="md:!col-span-4 !col-span-1 pr-5">
-                <h1 class="w-fit text-[40px] capitalize font-[600]">
+    <section class="md:mt-16 bg-[url(assets/images/home/amazon-sec-bg.png)] bg-center bg-cover bg-no-repeat min-h-screen flex items-center">
+        <div class="w-full md:px-[3vw] px-5 mx-auto grid items-center grid-cols-1 md:grid-cols-10 gap-8 md:gap-5">
+            <!-- Left Column -->
+            <div class="md:col-span-4">
+                <h1 class="text-3xl md:text-4xl capitalize font-semibold">
                     Our Published <span class="text-[var(--theme2)]">Work</span>
                 </h1>
-                <p class="text-[14px] font-[400] mt-2">With a diverse range of genres and topics, our portfolio reflects
-                    the depth of our expertise. Explore our portfolio to witness the success stories we've crafted for
-                    our clients, and discover how our professional book writers can bring your vision to life.</p>
+                <p class="text-sm md:text-base font-normal mt-2">
+                    With a diverse range of genres and topics, our portfolio reflects the depth of our expertise. Explore our portfolio to witness the success stories we've crafted for our clients, and discover how our professional book writers can bring your vision to life.
+                </p>
                 <button
-                    class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center mt-5">
+                    class="gradientBg text-white h-12 w-full md:w-44 justify-center rounded-xl text-sm flex gap-1 items-center mt-5">
                     Get Started Today
                     <i class="fa fa-angle-right"></i>
                 </button>
-                <div class="flex flex-col justify-between text-black mt-5">
+                <div class="flex flex-col mt-5">
                     <div class="text-red-500 text-lg">Live Chat</div>
                     <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
                 </div>
             </div>
-            <div class="md:!col-span-6 !col-span-1">
+            
+            <!-- Right Column (Swiper Carousel) -->
+            <div class="md:col-span-6">
                 <div class="swiper mySwiper2 mt-11">
                     <div class="swiper-wrapper">
+                        <!-- Swiper Slides -->
+                        <!-- Repeat this block for each slide -->
                         <div class="swiper-slide relative">
-                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
-                                <div class="flex gap-5 items-center">
-                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
-                                        alt="Profile Picture">
-                                    <div>
-                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
-                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
                                     </div>
                                 </div>
-                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
-                                    This book takes readers on a journey of growth, challenges, failures, and
-                                    triumphs From overcoming adversity to taking risks and forging meaningful
-                                    relationships. My story is one of resilience and perseverance...
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
                                 </p>
-                                <div class="mt-12">
-                                    <h5 class="flex gap-2 font-medium">Published on <img
-                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
                                 </div>
-                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
                             </div>
                             <img src="/assets/images/authorBbook/1.png" alt="Author Books"
-                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
                         </div>
                         <div class="swiper-slide relative">
-                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
-                                <div class="flex gap-5 items-center">
-                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
-                                        alt="Profile Picture">
-                                    <div>
-                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
-                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
                                     </div>
                                 </div>
-                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
-                                    This book takes readers on a journey of growth, challenges, failures, and
-                                    triumphs From overcoming adversity to taking risks and forging meaningful
-                                    relationships. My story is one of resilience and perseverance...
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
                                 </p>
-                                <div class="mt-12">
-                                    <h5 class="flex gap-2 font-medium">Published on <img
-                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
                                 </div>
-                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
                             </div>
                             <img src="/assets/images/authorBbook/1.png" alt="Author Books"
-                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
                         </div>
                         <div class="swiper-slide relative">
-                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
-                                <div class="flex gap-5 items-center">
-                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
-                                        alt="Profile Picture">
-                                    <div>
-                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
-                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
                                     </div>
                                 </div>
-                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
-                                    This book takes readers on a journey of growth, challenges, failures, and
-                                    triumphs From overcoming adversity to taking risks and forging meaningful
-                                    relationships. My story is one of resilience and perseverance...
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
                                 </p>
-                                <div class="mt-12">
-                                    <h5 class="flex gap-2 font-medium">Published on <img
-                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
                                 </div>
-                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
                             </div>
                             <img src="/assets/images/authorBbook/1.png" alt="Author Books"
-                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
                         </div>
                         <div class="swiper-slide relative">
-                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
-                                <div class="flex gap-5 items-center">
-                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
-                                        alt="Profile Picture">
-                                    <div>
-                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
-                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
                                     </div>
                                 </div>
-                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
-                                    This book takes readers on a journey of growth, challenges, failures, and
-                                    triumphs From overcoming adversity to taking risks and forging meaningful
-                                    relationships. My story is one of resilience and perseverance...
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
                                 </p>
-                                <div class="mt-12">
-                                    <h5 class="flex gap-2 font-medium">Published on <img
-                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
                                 </div>
-                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
                             </div>
                             <img src="/assets/images/authorBbook/1.png" alt="Author Books"
-                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
                         </div>
                         <div class="swiper-slide relative">
-                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
-                                <div class="flex gap-5 items-center">
-                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
-                                        alt="Profile Picture">
-                                    <div>
-                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
-                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
                                     </div>
                                 </div>
-                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
-                                    This book takes readers on a journey of growth, challenges, failures, and
-                                    triumphs From overcoming adversity to taking risks and forging meaningful
-                                    relationships. My story is one of resilience and perseverance...
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
                                 </p>
-                                <div class="mt-12">
-                                    <h5 class="flex gap-2 font-medium">Published on <img
-                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
                                 </div>
-                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
                             </div>
                             <img src="/assets/images/authorBbook/1.png" alt="Author Books"
-                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
                         </div>
                         <div class="swiper-slide relative">
-                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
-                                <div class="flex gap-5 items-center">
-                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
-                                        alt="Profile Picture">
-                                    <div>
-                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
-                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
                                     </div>
                                 </div>
-                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
-                                    This book takes readers on a journey of growth, challenges, failures, and
-                                    triumphs From overcoming adversity to taking risks and forging meaningful
-                                    relationships. My story is one of resilience and perseverance...
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
                                 </p>
-                                <div class="mt-12">
-                                    <h5 class="flex gap-2 font-medium">Published on <img
-                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
                                 </div>
-                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
                             </div>
                             <img src="/assets/images/authorBbook/1.png" alt="Author Books"
-                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
                         </div>
                         <div class="swiper-slide relative">
-                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
-                                <div class="flex gap-5 items-center">
-                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
-                                        alt="Profile Picture">
-                                    <div>
-                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
-                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
                                     </div>
                                 </div>
-                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
-                                    This book takes readers on a journey of growth, challenges, failures, and
-                                    triumphs From overcoming adversity to taking risks and forging meaningful
-                                    relationships. My story is one of resilience and perseverance...
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
                                 </p>
-                                <div class="mt-12">
-                                    <h5 class="flex gap-2 font-medium">Published on <img
-                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
                                 </div>
-                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
                             </div>
                             <img src="/assets/images/authorBbook/1.png" alt="Author Books"
-                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
                         </div>
                         <div class="swiper-slide relative">
-                            <div class="w-[90%] bg-[#ffffff94] py-[30px] px-[22px] boxShadow">
-                                <div class="flex gap-5 items-center">
-                                    <img class="w-20" src="/assets/images/home/client-placeholder.png"
-                                        alt="Profile Picture">
-                                    <div>
-                                        <h3 class="text-[22px] font-[500] "> Ivan Jr Molina</h3>
-                                        <p class="text-[14px] font-[400] ">Harmony</p>
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
                                     </div>
                                 </div>
-                                <p class="max-w-[80%] text-[14px] font-[400] mt-12">
-                                    This book takes readers on a journey of growth, challenges, failures, and
-                                    triumphs From overcoming adversity to taking risks and forging meaningful
-                                    relationships. My story is one of resilience and perseverance...
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
                                 </p>
-                                <div class="mt-12">
-                                    <h5 class="flex gap-2 font-medium">Published on <img
-                                            src="assets/images/Amazon-logo.png" alt="Akmazom Logo"></h5>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
                                 </div>
-                                <a class="text-blue-600 -mt-1"> Visit Now</a>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
                             </div>
                             <img src="/assets/images/authorBbook/1.png" alt="Author Books"
-                                class="absolute -right-1 top-[50%] bottom-[50%] -translate-y-[50%] w-[125px]">
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
                         </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
+                                </div>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
+                        </div>
+                        <div class="swiper-slide relative">
+                            <div class="w-full md:w-11/12 bg-white bg-opacity-60 py-6 px-5 shadow-lg rounded-lg">
+                                <div class="flex flex-col md:flex-row gap-4 items-center">
+                                    <img class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full" src="/assets/images/home/client-placeholder.png" alt="Profile Picture">
+                                    <div class="text-center md:text-left">
+                                        <h3 class="text-lg md:text-xl font-medium">Ivan Jr Molina</h3>
+                                        <p class="text-sm md:text-base font-normal">Harmony</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm md:text-base font-normal mt-4 md:mt-6">
+                                    This book takes readers on a journey of growth, challenges, failures, and triumphs. From overcoming adversity to taking risks and forging meaningful relationships, my story is one of resilience and perseverance...
+                                </p>
+                                <div class="mt-6">
+                                    <h5 class="flex items-center gap-2 text-sm md:text-base font-medium">
+                                        Published on <img src="assets/images/Amazon-logo.png" alt="Amazon Logo" class="w-20">
+                                    </h5>
+                                </div>
+                                <a href="#" class="text-blue-600 text-sm md:text-base mt-2 inline-block">Visit Now</a>
+                            </div>
+                            <img src="/assets/images/authorBbook/1.png" alt="Author Books"
+                                class="absolute -right-3 top-1/2 transform -translate-y-1/2 w-24 md:w-32">
+                        </div>
+                        <!-- End of Swiper Slide -->
                     </div>
                 </div>
             </div>
         </div>
-
-
     </section>
+    
 
     <section class="md:w-[80%] w-[90%] mx-auto mt-24 grid md:grid-cols-2 items-center">
         <div>
@@ -937,7 +970,7 @@
 
 
             </p>
-            <div class="flex gap-20 items-center mt-5">
+            <div class="flex md:gap-20 gap-2 items-center mt-5">
                 <button
                     class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
                     Get Started Today
