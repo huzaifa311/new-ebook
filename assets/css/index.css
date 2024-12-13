@@ -321,6 +321,8 @@ body,
     /* padding: 1rem; */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    width: 100%;
 }
 
 .faq-header {
@@ -358,4 +360,8 @@ body,
 .faq-answer {
     font-size: 0.875rem;
     color: #555;
+}
+
+.fa-twitter:before {
+    content: "\f099";
 }

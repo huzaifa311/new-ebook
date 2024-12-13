@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body class="!w-full !mr-auto !overflow-x-hidden md:!w-fit md:!mr-0">
     <header
         class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] md:pt-0 pt-8 md:px-0 px-4">
         <img src="assets/images/home/logo.png" alt="logo" class="md:w-[17%] w-44">
@@ -131,7 +131,7 @@
 
 
     <main
-        class="bg-[url(assets/images/home/banner-img.png)] h-auto md:!max-h-[250dvh] max-h-[200vh] bg-center bg-no-repeat bg-cover pt-[173px] pb-[500px] min-h-[180vh]">
+        class="bg-[url(assets/images/home/banner-img.png)] !h-fit md:!max-h-[250dvh] bg-center bg-no-repeat bg-cover pt-[173px] md:pb-[500px] min-h-[180vh]">
         <section class="md:w-[80vw] w-[92vw] mx-auto grid md:grid-cols-2 md:gap-0 gap-12 items-center text-white">
             <div>
                 <div class="flex items-center gap-1">
@@ -228,7 +228,7 @@
             </div>
         </div>
         <div class="md:mt-5 mt-12 md:w-[50vw] mx-auto">
-            <h1 class="text-[40px] text-center font-[500] leading-tight">
+            <h1 class="md:text-[40px] text-3xl text-center font-[500] leading-tight">
                 Dream Big On Becoming The <span class="text-[var(--theme2)]">Next Bestseller With Expert Online</span>
                 Book Publishing Services
             </h1>
@@ -276,9 +276,9 @@
         </section>
     </main>
 
-    <section class="md:mt-44 mt-80 grid md:grid-cols-2 items-center gap-4 w-[88.9vw] md:mr-auto md:ml-0 mx-auto">
+    <section class="md:mt-32 mt-14 grid md:grid-cols-2 items-center gap-4 w-[88.9vw] md:mr-auto md:ml-0 mx-auto">
         <img src="/assets/images/home/about.png" alt="About Books" class="w-[935px] md:order-1 order-2">
-        <div class="md:order-2 order-1 md:mt-0 mt-80">
+        <div class="md:order-2 order-1">
             <div class="flex items-end gap-2">
                 <img src="/assets/images/home/pen-about.png" alt="pen">
                 <h5 class="text-[var(--theme2)]">About Company</h5>
@@ -348,9 +348,9 @@
         </div>
     </section>
 
-    <section class="mt-28 w-[82%] mx-auto">
-        <h1 class="w-fit text-center text-[40px] capitalize mx-auto font-[600]">
-            Services Rendered by <br>
+    <section class="mt-28 md:w-[82%] w-[95%] mx-auto">
+        <h1 class="w-fit text-center md:text-[40px] text-[35px] capitalize mx-auto font-[600]">
+            Services Rendered by
             <span class="text-[var(--theme2)] leading-[50px]">Best Book Publisher</span>
         </h1>
         <div class="swiper mySwiper">
@@ -560,7 +560,7 @@
     </section>
 
     <section
-        class="md:w-[83%] w-[90%] mx-auto mt-20 py-7 bg-[url(assets/images/home/counter-bg.png)] bg-no-repeat bg-center bg-cover font-family text-white rounded-lg md:px-0 px-[3vw]">
+        class="md:w-[83%] w-full mx-auto mt-20 py-7 bg-[url(assets/images/home/counter-bg.png)] bg-no-repeat bg-center bg-cover font-family text-white rounded-lg md:px-0 px-[3vw]">
         <h1 class="text-[34px] font-[600] mt-3 pt-5 text-center">Figures that Speak Volume</h1>
         <p class="text-center text-[14px] md:max-w-[70%] mx-auto mt-2">Our achievements are a testament to our
             dedication,
@@ -594,7 +594,7 @@
     </section>
 
     <section class="md:w-[79.4%] w-[90%] mx-auto mt-24">
-        <h1 class="w-fit text-center text-[40px] capitalize mx-auto font-[600]">
+        <h1 class="w-fit text-center md:text-[40px] text-3xl capitalize mx-auto font-[600]">
             Take A Look at <span class="text-[var(--theme2)]">Our Portfolio</span>
         </h1>
         <p class="text-[16px] font-[400] text-center mt-2">At Best Book Publisher, we find satisfaction in our extensive
@@ -703,7 +703,7 @@
     </section>
 
     <section
-        class="md:mt-16 bg-[url(assets/images/home/amazon-sec-bg.png)] bg-center bg-cover bg-no-repeat min-h-screen flex items-center">
+        class="mt-16 bg-[url(assets/images/home/amazon-sec-bg.png)] bg-center bg-cover bg-no-repeat min-h-screen flex items-center">
         <div class="w-full md:px-[3vw] px-5 mx-auto grid items-center grid-cols-1 md:grid-cols-10 gap-8 md:gap-5">
             <!-- Left Column -->
             <div class="md:col-span-4">
@@ -1043,8 +1043,8 @@
     </section>
 
     <section
-        class="md:w-[85%] w-[95%] m-auto mt-24 rounded-lg bg-[url(assets/images/home/newsletter-bg.png)] py-14  grid md:grid-cols-2 items-center text-white md:gap-0 gap-12">
-        <h1 class="md:text-[40px] text-3xl font-[600] text-center">Subscribe To <span
+        class="md:w-[85%] w-full m-auto mt-24 md:rounded-lg !rounded-0 bg-[url(assets/images/home/newsletter-bg.png)] py-14 grid md:grid-cols-2 items-center text-white md:gap-0 gap-8 bg-no-repeat bg-cover">
+        <h1 class="md:text-[40px] text-2xl font-[600] text-center">Subscribe To <span
                 class="text-[#3ebfc2]">Newsletter</span>
         </h1>
         <div class="grid grid-cols-2 gap-3 bg-white rounded-lg items-center md:w-[80%] w-[92%] mx-auto md:p-3">
@@ -1052,7 +1052,6 @@
             <button class="text-white gradientBg h-full md:rounded-lg py-4">Subscribe</button>
         </div>
     </section>
-
 
     <section class="mt-24 md:w-[85vw] w-[95vw] mx-auto">
         <h1 class="w-fit text-center md:text-[40px] text-4xl capitalize mx-auto font-[600]">
@@ -1146,7 +1145,6 @@
             <div class="swiper-pagination z-50 absolute !left-[90%] !bottom-10 !w-fit"></div>
         </div>
     </section>
-
 
     <section class="faq mt-16 py-16">
         <div class="max-w-4xl mx-auto md:w-auto w-[92%]">
@@ -1294,10 +1292,9 @@
                     </div>
                 </div>
             </div>
-            <form class=" px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder
-        rounded-xl relative">
-                <h1 class="text-2xl font-light">
-                    Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span><br> Discount
+            <form class=" px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder rounded-xl relative">
+                <h1 class="text-2xl font-light w-[80%]">
+                    Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span> Discount
                 </h1>
                 <div class="mt-5 space-y-4">
                     <div class="grid grid-cols-2 gap-4">
@@ -1340,13 +1337,104 @@
                     <button type="submit" class="text-white gradientBg py-3 w-full rounded-lg">Sign Up</button>
                 </div>
                 <img src="/assets/images/home/formAbsolute.jpg" alt="Deep Water"
-                    class="absolute -right-8 -top-8 rotate-[22deg] h-28 object-contain">
+                    class="absolute md:-right-8 -right-3 -top-8 rotate-[22deg] h-28 object-contain">
             </form>
         </div>
     </section>
 
-
-    <footer class="w-[90%] mx-auto"></footer>
+    <footer>
+        <div class="w-[90%] md:w-[84%] mx-auto py-12">
+            <div class="md:flex justify-between items-center pb-7 border-b-black border-b">
+                <img src="/assets/images/footer-logo.png" alt="Logo" class="w-56">
+                <p class="md:max-w-[40%] text-sm">Best Book Publisher has excelled as a book writing company, helping
+                    authors
+                    and writer realize their dream.</p>
+                <ul class="flex flex-wrap items-center gap-5">
+                    <li class="w-11 h-11 rounded-full flex justify-center items-center bg-[var(--theme)]">
+                        <img src="/assets/images/twitter.png" alt="Twitter" class="h-6">
+                    </li>
+                    <li class="w-11 h-11 rounded-full flex justify-center items-center bg-[var(--theme)]">
+                        <img src="/assets/images/instagram.png" alt="instagram" class="h-6">
+                    </li>
+                    <li class="w-11 h-11 rounded-full flex justify-center items-center bg-[var(--theme)]">
+                        <img src="/assets/images/linkedin.png" alt="linkedin" class="h-6">
+                    </li>
+                    <li class="w-11 h-11 rounded-full flex justify-center items-center bg-[var(--theme)]">
+                        <img src="/assets/images/facebook.png" alt="facebook" class="h-6">
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-14 grid md:grid-cols-10 gap-4">
+                <div class="grid md:grid-cols-3 md:col-span-7 md:gap-0 gap-8">
+                    <div class="md:col-span-2">
+                        <h1 class="text-[var(--theme2)] text-2xl font-semibold">Services</h1>
+                        <ul class="mt-3 space-y-2 text-[14px] grid grid-cols-2 grid-rows-7 md:gap-x-0 gap-x-5">
+                            <li class="mt-2">Ghostwriting</li>
+                            <li>Book Editing</li>
+                            <li>Book Cover Design</li>
+                            <li>Ebook Cover Design</li>
+                            <li>Book Writing</li>
+                            <li>Book Marketing</li>
+                            <li>Ebook Writing Services</li>
+                            <li>Biography Writing</li>
+                            <li>Memoir Writing</li>
+                            <li>Book Printing</li>
+                            <li>Video Book</li>
+                            <li>Audio Book</li>
+                            <li>Author Website</li>
+                            <li>Book Illustration</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h1 class="text-[var(--theme2)] text-2xl font-semibold">Company</h1>
+                            <ul class="mt-3 space-y-2 text-[14px]">
+                                <li>About Us</li>
+                                <li>Contact Us</li>
+                                <li>Blog</li>
+                                <li>FAQs</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h1 class="text-[var(--theme2)] text-2xl font-semibold">Policies</h1>
+                            <ul class="mt-3 space-y-2 text-[14px]">
+                                <li>Privacy Policy</li>
+                                <li>Terms & Condition</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 md:mt-0 mt-5">
+                    <h1 class="text-[var(--theme2)] text-2xl font-semibold">Contact Information</h1>
+                    <ul class="mt-5 space-y-3 text-[15px]">
+                        <li class="flex gap-4 items-center">
+                            <img src="/assets/images/phone-icon-f.png" alt="Phone Icon">
+                            +1 (437) 826-2236
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <img src="/assets/images/email-icon-f.png" alt="Email Icon">
+                            info@bookpublishers.com
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <img src="/assets/images/address-icon-f.png" alt="Address Icon">
+                            Head Office: 5250 Old Orchard Rd, Skokie, IL 60077
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <img src="/assets/images/address-icon-f.png" alt="Address Icon">
+                            Branch Office: 13209 Kirkglen Dr Austin, Tx 78727, USA
+                        </li>
+                    </ul>
+                    <img src="/assets/images/customer-review.png" alt="Review Platforms" class="mt-7">
+                </div>
+            </div>
+        </div>
+        <div class="md:mt-9 bg-[#3DBEC1] py-8">
+            <div class="grid md:grid-cols-2 md:gap-0 gap-11 text-white w-[90%] md:w-[84%] mx-auto text-[14px]">
+                <p>All Rights Reserved 2024 - Best Book Publisher - Powered by Best Book Writers.</p>
+                <img src="/assets/images/cards.png" alt="Cards" class="md:ml-auto">
+            </div>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
