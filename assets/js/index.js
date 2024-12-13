@@ -30,3 +30,37 @@ dropCont.addEventListener("click", () => {
     dropMob.classList.add("!flex");
   }
 });
+
+function toggleFAQ(faqId) {
+  // Get the clicked FAQ answer and icon
+  const answerToToggle = document.getElementById(`faq-${faqId}`);
+  const iconToToggle = document.getElementById(`icon-${faqId}`);
+
+  // Get all FAQ answers and icons
+  const allAnswers = document.querySelectorAll('.faq-answer');
+  const allIcons = document.querySelectorAll('.faq-item span[id^="icon-"]');
+
+  // Close all other FAQ answers and reset their icons
+  allAnswers.forEach(answer => {
+      if (answer !== answerToToggle) {
+          answer.classList.remove('open');
+      }
+  });
+
+  allIcons.forEach(icon => {
+      if (icon !== iconToToggle) {
+          icon.textContent = '+';
+      }
+  });
+
+  // Toggle the clicked FAQ
+  if (answerToToggle.classList.contains('open')) {
+      // If it's already open, close it
+      answerToToggle.classList.remove('open');
+      iconToToggle.textContent = '+';
+  } else {
+      // If it's closed, open it
+      answerToToggle.classList.add('open');
+      iconToToggle.textContent = '-';
+  }
+}
