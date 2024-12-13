@@ -37,30 +37,82 @@ function toggleFAQ(faqId) {
   const iconToToggle = document.getElementById(`icon-${faqId}`);
 
   // Get all FAQ answers and icons
-  const allAnswers = document.querySelectorAll('.faq-answer');
+  const allAnswers = document.querySelectorAll(".faq-answer");
   const allIcons = document.querySelectorAll('.faq-item span[id^="icon-"]');
 
   // Close all other FAQ answers and reset their icons
-  allAnswers.forEach(answer => {
-      if (answer !== answerToToggle) {
-          answer.classList.remove('open');
-      }
+  allAnswers.forEach((answer) => {
+    if (answer !== answerToToggle) {
+      answer.classList.remove("open");
+    }
   });
 
-  allIcons.forEach(icon => {
-      if (icon !== iconToToggle) {
-          icon.textContent = '+';
-      }
+  allIcons.forEach((icon) => {
+    if (icon !== iconToToggle) {
+      icon.textContent = "+";
+    }
   });
 
   // Toggle the clicked FAQ
-  if (answerToToggle.classList.contains('open')) {
-      // If it's already open, close it
-      answerToToggle.classList.remove('open');
-      iconToToggle.textContent = '+';
+  if (answerToToggle.classList.contains("open")) {
+    // If it's already open, close it
+    answerToToggle.classList.remove("open");
+    iconToToggle.textContent = "+";
   } else {
-      // If it's closed, open it
-      answerToToggle.classList.add('open');
-      iconToToggle.textContent = '-';
+    // If it's closed, open it
+    answerToToggle.classList.add("open");
+    iconToToggle.textContent = "-";
   }
 }
+
+const tabData = [
+  {
+    title: "Creative Vision and Tactical Execution",
+    description:
+      "We have a board of well-versed book publishers who conduct thorough research when it comes to book publishing solutions. In order to understand the requirements of the client properly, we ask several questions, then add our creative vision and execute it tactically.",
+  },
+  {
+    title: "Strategic Planning and Blueprinting",
+    description:
+      "Understanding the pivotal role of a strategic approach in book publishing, we emphasize the significance of a well-structured plan...",
+  },
+  {
+    title: "Dedicated Consultation Support",
+    description:
+      "Our book publishing experts are available round-the-clock to clarify any confusion or concerns you may have regarding your order.",
+  },
+  {
+    title: "Iterative Revisions",
+    description:
+      "The philosophy behind our revision process is to guarantee the rendering of high-quality best publishing services...",
+  },
+  {
+    title: "Precision Book Publishing",
+    description:
+      "Recognizing the utmost significance of excellence in book publishing, our proficient team dedicates itself to a thorough publishing process.",
+  },
+  {
+    title: "Striking Book Cover Design",
+    description:
+      "Our book designers meticulously craft aesthetically pleasing covers aligned with the book's theme...",
+  },
+];
+
+function setActiveTab(index) {
+  // Reset all images
+  document.querySelectorAll(".tab-image").forEach((img, i) => {
+    img.classList.remove("border", "border-black");
+  });
+
+  // Set active image
+  const activeImage = document.querySelectorAll(".tab-image")[index];
+  activeImage.classList.add("border", "border-black");
+
+  // Update tab content
+  document.getElementById("tab-title").textContent = tabData[index].title;
+  document.getElementById("tab-description").textContent =
+    tabData[index].description;
+}
+
+// Initialize the first tab as active
+setActiveTab(0);

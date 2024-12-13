@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
 </head>
 
-<body class="">
+<body>
     <header
         class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] md:pt-0 pt-8 md:px-0 px-4">
         <img src="assets/images/home/logo.png" alt="logo" class="md:w-[17%] w-44">
         <nav class="hidden md:flex items-center !text-white">
             <div>
-                <a href="#" class="pl-6 pb-1 text-[var(--theme)]">Home</a>
+                <a href="./index.html" class="pl-6 pb-1 text-[var(--theme)]">Home</a>
             </div>
             <div>
-                <a href="#" class="pl-6">About Us</a>
+                <a href="./about-us.html" class="pl-6">About Us</a>
             </div>
             <div class="relative !z-50 group">
                 <a href="#" class="pl-6 flex items-center">
@@ -77,10 +77,10 @@
     <div id="mobileMenu"
         class="!h-0 !overflow-hidden !transition-all md:hidden !duration-700 w-[92%] left-[50%] right-[50%] -translate-x-[50%] absolute top-32 bg-[url(assets/images/home/menu-bg.jpg)] bg-cover bg-no-repeat bg-center rounded-lg text-black space-y-7">
         <div class="pt-8">
-            <a href="#" class="pl-6 pb-1 text-[var(--theme)]">Home</a>
+            <a href="./index.html" class="pl-6 pb-1 text-[var(--theme)]">Home</a>
         </div>
         <div>
-            <a href="#" class="pl-6">About Us</a>
+            <a href="./about-us.html" class="pl-6">About Us</a>
         </div>
         <div id="dropCont" class="relative !z-50 group">
             <a href="#" class="pl-6 flex items-center">
@@ -129,7 +129,6 @@
         </div>
     </div>
 
-
     <main
         class="bg-[url(assets/images/home/banner-img.png)] !h-fit md:!max-h-[250dvh] bg-center bg-no-repeat bg-cover pt-[173px] md:pb-[500px] min-h-[180vh]">
         <section class="md:w-[80%] w-[93%] mx-auto grid md:grid-cols-2 md:gap-0 gap-12 items-center text-white">
@@ -165,8 +164,8 @@
             </div>
             <form
                 class="md:w-[80%] w-full mx-auto md:ml-auto md:mr-0 px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder rounded-xl relative">
-                <h1 class="text-2xl font-light">
-                    Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span><br> Discount
+                <h1 class="text-2xl font-light md:w-full w-[82%]">
+                    Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span> Discount
                 </h1>
                 <div class="mt-5 space-y-4">
                     <div class="grid grid-cols-2 gap-3">
@@ -201,7 +200,7 @@
                     <button type="submit" class="text-white gradientBg py-3 w-full rounded-lg">Sign Up</button>
                 </div>
                 <img src="/assets/images/home/formAbsolute.jpg" alt="Deep Water"
-                    class="absolute -right-8 -top-8 rotate-[22deg] h-28 object-contain">
+                    class="absolute md:-right-10 right-1 md:-top-8 -top-10 rotate-[22deg] h-28 object-contain">
             </form>
         </section>
         <div class="md:mt-4 mt-11 md:w-[80%] w-[90%] mx-auto">
@@ -283,7 +282,7 @@
                 <img src="/assets/images/home/pen-about.png" alt="pen">
                 <h5 class="text-[var(--theme2)]">About Company</h5>
             </div>
-            <h3 class="text-[30px] font-[700] leading-[42px] mt-4 ">Looking for <span
+            <h3 class="text-[30px] font-[600] leading-[42px] mt-4 ">Looking for <span
                     class="capitalize text-[var(--theme2)]">Amazon Book Publishing Services </span> Look No More!</h3>
             <p class="mt-2 text-[14px] font-[400] !font-[Poppins] text-[#000] ">
                 At Best Book Publisher, we pride ourselves on delivering professional online book publishing services
@@ -1043,6 +1042,181 @@
     </section>
 
     <section
+        class="md:w-[85%] w-full mx-auto mt-24 bg-[url(/assets/images/home/tab-sec-bg.png)] px-7 py-14 relative bg-cover bg-no-repeat bg-left-top pl-10">
+        <div class="md:w-[78%]">
+            <div class="md:flex">
+                <h1 class="md:w-[72%] text-[30px] font-[600] text-white">Our Success Formula Involves Creativity,
+                    Passion, and Strategic Execution</h1>
+                <div class="space-y-6">
+                    <button
+                        class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                        Get Started Today
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+                    <div class="flex gap-2 items-center">
+                        <div
+                            class="flex justify-center items-center h-11 w-11 rounded-full border border-white !text-white rotate-90">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="flex flex-col justify-between text-white">
+                            <div class="text-lg">Live Chat</div>
+                            <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs" class="grid md:grid-cols-6 grid-cols-3 items-center mt-12 md:gap-y-0 gap-y-5">
+                <div class="flex gap-2 items-center">
+                    <img onclick="setActiveTab(0)" src="/assets/images/home/success/1.png" alt="creative"
+                        class="w-[75px] h-[75px] bg-[#89deed] p-2 rounded-full cursor-pointer tab-image">
+                    <img src="/assets/images/home/success/tab-arrow.png" class="h-4">
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img onclick="setActiveTab(1)" src="/assets/images/home/success/2.png" alt="creative"
+                        class="w-[75px] h-[75px] bg-[#89deed] p-2 rounded-full cursor-pointer tab-image">
+                    <img src="/assets/images/home/success/tab-arrow.png" class="h-4">
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img onclick="setActiveTab(2)" src="/assets/images/home/success/3.png" alt="creative"
+                        class="w-[75px] h-[75px] bg-[#89deed] p-2 rounded-full cursor-pointer tab-image">
+                    <img src="/assets/images/home/success/tab-arrow.png" class="h-4">
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img onclick="setActiveTab(3)" src="/assets/images/home/success/4.png" alt="creative"
+                        class="w-[75px] h-[75px] bg-[#89deed] p-2 rounded-full cursor-pointer tab-image">
+                    <img src="/assets/images/home/success/tab-arrow.png" class="h-4">
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img onclick="setActiveTab(4)" src="/assets/images/home/success/5.png" alt="creative"
+                        class="w-[75px] h-[75px] bg-[#89deed] p-2 rounded-full cursor-pointer tab-image">
+                    <img src="/assets/images/home/success/tab-arrow.png" class="h-4">
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img onclick="setActiveTab(5)" src="/assets/images/home/success/6.png" alt="creative"
+                        class="w-[75px] h-[75px] bg-[#89deed] p-2 rounded-full cursor-pointer tab-image">
+                </div>
+            </div>
+            <div id="tab-content" class="mt-8 min-h-20">
+                <div class="grid md:grid-cols-6 gap-2">
+                    <div class="md:col-span-2">
+                        <h1 id="tab-title" class="font-semibold text-[24px] text-white leading-[32px] font-semibold">
+                            Creative Vision and Tactical
+                            Execution</h1>
+                    </div>
+                    <div class="md:col-span-4">
+                        <p id="tab-description" class="text-[13px] font-[400] text-white md:w-[93%]">We have a board of
+                            well-versed book publishers who
+                            conduct thorough research when it comes to book publishing solutions. In order to understand
+                            the
+                            requirements of the client properly, we ask several questions, then add our creative vision
+                            and
+                            execute it tactically.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="/assets/images/home/tab-sec-book.webp" alt="tab-sec-book"
+                class="absolute -right-20 top-0 md:h-[118%] h-0">
+        </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-8 mt-24">
+        <div class="bg-[url(/assets/images/home/process-bg.png)] bg-center bg-contain bg-no-repeat">
+            <div class="grid grid-cols-2 grid-rows-2 md:w-[80%] w-[95%] mx-auto md:mr-0 md:ml-auto gap-2">
+                <div class="bg-white rounded-xl py-[28px] px-[14px] serviceBox group">
+                    <h1
+                        class="text-[40px] font-[400] text-white text-center bg-[url(/assets/images/home/process-num-bg.png)] group-hover:bg-[url(/assets/images/home/process-num-bghover.png)] bg-[92px] bg-no-repeat w-full bg-top py-[25px]">
+                        01</h1>
+                    <h1 class="text-[16px] font-[600] text-center my-2">Best Percentages</h1>
+                    <span class="process-divider">
+                        <div class="dividers-process"></div>
+                    </span>
+                    <p class="text-[14px] font-[400] text-center">Regardless of your level of experience, we will assist
+                        in paving the path to success..</p>
+                </div>
+                <div class="bg-white rounded-xl py-[28px] px-[14px] serviceBox group">
+                    <h1
+                        class="text-[40px] font-[400] text-white text-center bg-[url(/assets/images/home/process-num-bg.png)] group-hover:bg-[url(/assets/images/home/process-num-bghover.png)] bg-[92px] bg-no-repeat w-full bg-top py-[25px]">
+                        02</h1>
+                    <h1 class="text-[16px] font-[600] text-center my-2">Transparency</h1>
+                    <span class="process-divider">
+                        <div class="dividers-process"></div>
+                    </span>
+                    <p class="text-[14px] font-[400] text-center">You can see every step of the procedure in full
+                        transparency. You'll be aware of what your editor.</p>
+                </div>
+                <div class="bg-white rounded-xl py-[28px] px-[14px] serviceBox group">
+                    <h1
+                        class="text-[40px] font-[400] text-white text-center bg-[url(/assets/images/home/process-num-bg.png)] group-hover:bg-[url(/assets/images/home/process-num-bghover.png)] bg-[92px] bg-no-repeat w-full bg-top py-[25px]">
+                        03</h1>
+                    <h1 class="text-[16px] font-[600] text-center my-2">24/7 Support</h1>
+                    <span class="process-divider">
+                        <div class="dividers-process"></div>
+                    </span>
+                    <p class="text-[14px] font-[400] text-center">No matter what time of day, we are always available to
+                        you and have answers to any questions you may have.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl py-[28px] px-[14px] serviceBox group">
+                    <h1
+                        class="text-[40px] font-[400] text-white text-center bg-[url(/assets/images/home/process-num-bg.png)] group-hover:bg-[url(/assets/images/home/process-num-bghover.png)] bg-[92px] bg-no-repeat w-full bg-top py-[25px]">
+                        04</h1>
+                    <h1 class="text-[16px] font-[600] text-center my-2">Publishing Trends</h1>
+                    <span class="process-divider">
+                        <div class="dividers-process"></div>
+                    </span>
+                    <p class="text-[14px] font-[400] text-center">
+                        Our publishing staff stays abreast of the most recent developments in this field on a regular
+                        basis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-[77%] w-[95%] md:mx-0 mx-auto md:mt-0 mt-5">
+            <div class="flex items-end gap-2">
+                <img src="/assets/images/home/pen-about.png" alt="pen">
+                <h5 class="text-[var(--theme2)] font-[600]">Our Process</h5>
+            </div>
+            <div>
+                <h3 class="text-[26px] font-[600] leading-[42px] mt-4 ">With the help of Amazon <span
+                        class="capitalize text-[var(--theme2)]">Book Publishing Services, </span>Tell the World Your
+                    Story</h3>
+                <p class="mt-3 text-[14px]">With the help of book publishing services, we help innumerable authors
+                    become bestsellers. Some of the most well-known authors of all time use the platform to share their
+                    works.</p>
+            </div>
+            <div>
+                <h3 class="text-[26px] font-[600] leading-[42px] mt-3 ">Consul<span
+                        class="text-[var(--theme2)]">tancy</span></h3>
+                <p class="mt-2 text-[14px]">We are here to address any inquiries you may have concerning self-publishing
+                    your book. We'll make sure everything is simple and assist in guiding the process.</p>
+            </div>
+            <div>
+                <h3 class="text-[26px] font-[600] leading-[42px] mt-3 ">Leading Literary <span
+                        class="text-[var(--theme2)]">Agents</span></h3>
+                <p class="mt-2 text-[14px]">Our goal is to assist you in locating the ideal fit for your undertaking.
+                    We'll put you in touch with agents who are eager to perform at the highest level.</p>
+            </div>
+            <div class="flex md:gap-20 gap-2 items-center mt-9">
+                <button
+                    class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                    Get Started Today
+                    <i class="fa fa-angle-right"></i>
+                </button>
+                <div class="flex gap-2 items-center">
+                    <div
+                        class="flex justify-center items-center h-11 w-11 rounded-full border border-black !text-black rotate-90">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex flex-col justify-between text-black">
+                        <div class="text-lg">Live Chat</div>
+                        <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
         class="md:w-[85%] w-full m-auto mt-24 md:rounded-lg !rounded-0 bg-[url(assets/images/home/newsletter-bg.png)] py-14 grid md:grid-cols-2 items-center text-white md:gap-0 gap-8 bg-no-repeat bg-cover">
         <h1 class="md:text-[40px] text-2xl font-[600] text-center">Subscribe To <span
                 class="text-[#3ebfc2]">Newsletter</span>
@@ -1053,7 +1227,7 @@
         </div>
     </section>
 
-    <section class="mt-24 md:w-[85vw] w-[95vw] mx-auto">
+    <!-- <section class="mt-24 md:w-[85vw] w-[95vw] mx-auto">
         <h1 class="w-fit text-center md:text-[40px] text-4xl capitalize mx-auto font-[600]">
             What Clients Says about
             <span class="text-[var(--theme2)] leading-[45px]">Best Book Publisher</span>
@@ -1088,7 +1262,6 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <!-- Slide 2 -->
                     <div class="test-item grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <img src="assets/images/2.webp" alt="test-2">
@@ -1115,7 +1288,6 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <!-- Slide 3 -->
                     <div class="test-item grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <img src="assets/images/6.webp" alt="test-3">
@@ -1143,6 +1315,147 @@
                 </div>
             </div>
             <div class="swiper-pagination z-50 absolute !left-[90%] !bottom-10 !w-fit"></div>
+        </div>
+    </section> -->
+
+    <section class="mt-24 mb-16">
+        <h1 class="md:ml-[7vw] ml-[2vw] text-[40px] text-center mb-8 font-[600] leading-[42px]">
+            Feedbacks & <span class="capitalize text-[var(--theme2)]">Testimonials</span>
+        </h1>
+        <div class="swiper mySwiper3 relative px-[2vw] mt-5">
+            <div class="swiper-wrapper pb-20">
+                <div class="swiper-slide md:mx-5">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-01.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">Very cooperative staff. They were able to understand my complex project requirements and deliver everything on time.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">John</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5 mt-16">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-02.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">Best book writing professionals I have came across in USA. They delivered everything they had promised. Very satisfied.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">Marker</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-03.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">I was skeptic at first but after talking to Adam and conveying all my queries, I received better quality work than I had imagined. I recommend their services to everyone out there.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">Elaine</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5 mt-16">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-04.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">1.	To publish my book, I needed a hassle-free book publishing plan. My sales have increased ever since this website accomplished far more than it promised</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">Bob</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-05.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">Very cooperative staff. They were able to understand my complex project requirements and deliver everything on time.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">John</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5 mt-16">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-06.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">Best book writing professionals I have came across in USA. They delivered everything they had promised. Very satisfied.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">Marker</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-07.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">Very cooperative staff. They were able to understand my complex project requirements and deliver everything on time.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">John</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5 mt-16">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-08.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">Best book writing professionals I have came across in USA. They delivered everything they had promised. Very satisfied.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">Marker</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-09.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">Very cooperative staff. They were able to understand my complex project requirements and deliver everything on time.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">John</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide md:mx-5 mt-16">
+                    <div class="pt-14">
+                        <div class="bg-white rounded-2xl relative rounded-5 pb-3 pl-[20px] pr-[10px] shadowTestimonials">
+                            <img src="/assets/images/home/client-10.png" alt="Client" class="h-24 absolute -top-12 left-8">
+                            <div class="pt-20"></div>
+                            <p class="text-[13px] font-[400] leading-[20px] overflow-y-scroll h-[100px] pr-[10px]">Best book writing professionals I have came across in USA. They delivered everything they had promised. Very satisfied.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <h3 class="text-[20px] font-[600]">Marker</h3>
+                                <img src="/assets/images/home/stars.png" alt="Stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination !mt-10"></div>
         </div>
     </section>
 
@@ -1337,7 +1650,7 @@
                     <button type="submit" class="text-white gradientBg py-3 w-full rounded-lg">Sign Up</button>
                 </div>
                 <img src="/assets/images/home/formAbsolute.jpg" alt="Deep Water"
-                    class="absolute md:-right-8 -right-3 -top-8 rotate-[22deg] h-28 object-contain">
+                    class="absolute md:-right-8 -right-1 -top-8 rotate-[22deg] h-28 object-contain">
             </form>
         </div>
     </section>
@@ -1389,7 +1702,7 @@
                         <div>
                             <h1 class="text-[var(--theme2)] text-2xl font-semibold">Company</h1>
                             <ul class="mt-3 space-y-2 text-[14px]">
-                                <li>About Us</li>
+                                <li><a href="./about-us.html">About Us</a></li>
                                 <li>Contact Us</li>
                                 <li>Blog</li>
                                 <li>FAQs</li>

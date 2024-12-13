@@ -365,3 +365,23 @@ body,
 .fa-twitter:before {
     content: "\f099";
 }
+
+.serviceBox{
+    box-shadow: 4px 4px 20px #0000006e;
+}
+
+.process-divider {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.dividers-process {
+    width: 30%;
+    height: 3px;
+    background: #0a6688;
+}
+
+.shadowTestimonials{
+    box-shadow: 3px 4px 12px #00000047;
+}

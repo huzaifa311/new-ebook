@@ -48,11 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".mySwiper3", {
-        slidesPerView: 1,
-        spaceBetween: 5,
-        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 6,
+        loop: true,
         autoplay: {
-          delay: 300000000000000,
+          delay: 3000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -64,9 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
           prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-          320: { slidesPerView: 1, spaceBetween: 5 },
-          640: { slidesPerView: 1, spaceBetween: 5 },
-          1024: { slidesPerView: 1, spaceBetween: 5 },
+          320: { slidesPerView: 1, spaceBetween: 20 },
+          640: { slidesPerView: 2, spaceBetween: 3 },
+          1024: { slidesPerView: 4, spaceBetween: 5 },
         },
     });
 });
