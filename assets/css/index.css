@@ -385,3 +385,7 @@ body,
 .shadowTestimonials{
     box-shadow: 3px 4px 12px #00000047;
 }
+
+.aboutBanner{
+    background-position-x: -130px !important;
+}

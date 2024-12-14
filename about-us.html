@@ -18,13 +18,14 @@
         <img src="assets/images/home/logo.png" alt="logo" class="md:w-[17%] w-44">
         <nav class="hidden md:flex items-center !text-white">
             <div>
-                <a href="./index.html" class="pl-6">Home</a>
+                <a href="./index.html" class="ml-6">Home</a>
             </div>
             <div>
-                <a href="./about-us.html" class="pl-6 pb-1 text-[var(--theme)]">About Us</a>
+                <a href="./about-us.html" class="ml-6 pb-1 border-b border-b-[var(--theme)] text-[var(--theme)]">About
+                    Us</a>
             </div>
             <div class="relative !z-50 group">
-                <a href="#" class="pl-6 flex items-center">
+                <a href="#" class="ml-6 flex items-center">
                     Services
                     <i class="fa fa-angle-down ml-2"></i>
                 </a>
@@ -48,10 +49,10 @@
                 </div>
             </div>
             <div>
-                <a href="#" class="pl-6">Blog</a>
+                <a href="#" class="ml-6">Blog</a>
             </div>
             <div>
-                <a href="#" class="pl-6">Contact Us</a>
+                <a href="#" class="ml-6">Contact Us</a>
             </div>
         </nav>
         <div class="md:flex hidden gap-2 items-center">
@@ -129,12 +130,45 @@
         </div>
     </div>
 
-
-    <main class="bg-[url(assets/images/About/about-banner-img.png)] !h-fit md:!max-h-[250dvh] bg-center bg-no-repeat bg-cover pt-[173px] min-h-[130vh] flex justify-center">
-        <section class="md:w-[75%] w-[93%]">
-            As Professional Book Publishers, We Will Help You Make Your Dream Come True
+    <main
+        class="bg-[url(assets/images/About/about-banner-img.png)] !h-fit md:!max-h-[250dvh] md:!bg-center bg-no-repeat bg-cover pt-[173px] md:min-h-[130vh] min-h-[600px] flex justify-center aboutBanner">
+        <section class="md:w-[85%] w-[93%] md:mt-12">
+            <h1
+                class="text-[24px] md:text-[42px] font-[600] md:px-[18%] text-white text-center mb-6 leading-[30px] md:!leading-[48px]">
+                As Professional Book Publishers, <span class="text-[var(--theme)] md:text-[38px] ">We Will Help You Make
+                    Your Dream</span> Come True
+            </h1>
+            <p class="text-white text-center font-[400] text-[12px] md:text-[14px]">Let our book publishing
+                professionals take over the process of your manuscript publishing while you take a seat back and relax.
+            </p>
+            <div class="flex gap-20 gap-5 flex-wrap items-center justify-center mt-8">
+                <button
+                    class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                    Get Started Today
+                    <i class="fa fa-angle-right"></i>
+                </button>
+                <div class="flex gap-2 items-center">
+                    <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-white rotate-90">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex flex-col justify-between text-white">
+                        <div class="text-lg">Live Chat</div>
+                        <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <section class="md:w-[80vw] w-[90vw] mx-auto mt-24">
+        <div class="flex items-end gap-2">
+            <img src="/assets/images/home/pen-about.png" alt="pen">
+            <h5 class="text-[var(--theme2)]">About Us</h5>
+        </div>
+        <div class="grid md:grid-cols-2 items-center md:gap-10 gap-0 mt-2">
+            <h2 class="capitalize text-[40px] font-[600]">Who are we?</h2>
+        </div>
+    </section>
 
     <footer>
         <div class="w-[90%] md:w-[84%] mx-auto py-12">
