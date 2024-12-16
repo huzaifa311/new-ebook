@@ -169,3 +169,46 @@ function setActiveTab2(index) {
 
 // Initialize the first tab as active
 setActiveTab2(0);
+
+
+const tabData3 = [
+  {
+    title: "Assessing",
+    description:
+      "In this crucial phase, our experienced team evaluates the manuscript's content, structure, and overall coherence, laying the foundation for a targeted and effective editing process.",
+  },
+  {
+    title: "Editing",
+    description:
+      "Our skilled editors meticulously refine the manuscript, addressing grammar, syntax, and stylistic elements to enhance clarity and coherence, ensuring a polished and professional final product.",
+  },
+  {
+    title: "Reviewing",
+    description:
+      "Engaging in a comprehensive review, our team collaborates with authors to incorporate feedback, ensuring that the edited manuscript aligns seamlessly with their vision and goals for the book.",
+  },
+  {
+    title: "Finalizing",
+    description:
+      "In the concluding stage, we meticulously ensure that all edits and revisions have been integrated seamlessly, presenting authors with a finalized manuscript ready for publication, reflecting the highest standards of quality.",
+  },
+];
+
+function setActiveTab3(index) {
+  // Reset all images
+  document.querySelectorAll(".tab-image").forEach((img, i) => {
+    img.classList.remove("border", "border-black");
+  });
+
+  // Set active image
+  const activeImage = document.querySelectorAll(".tab-image")[index];
+  activeImage.classList.add("border", "border-black");
+
+  // Update tab content
+  document.getElementById("tab-title").textContent = tabData3[index].title;
+  document.getElementById("tab-description").textContent =
+    tabData3[index].description;
+}
+
+// Initialize the first tab as active
+setActiveTab3(0);
