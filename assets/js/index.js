@@ -116,3 +116,56 @@ function setActiveTab(index) {
 
 // Initialize the first tab as active
 setActiveTab(0);
+
+
+const tabData2 = [
+  {
+    title: "Smart Execution and Innovative Strategy",
+    description:
+      "When it comes to book writing services, we have a board of experienced authors that undertake extensive research. To adequately grasp the client's requirements, we ask various questions, then add our creative vision and implement it tactically.",
+  },
+  {
+    title: "Strategic Planning and Outlining",
+    description:
+      "Recognizing the pivotal role of a well-constructed outline, we consider it the foundational step in our book writing process. Each chapter's core points are meticulously addressed through customized questionnaires, ensuring alignment with the client's brief.",
+  },
+  {
+    title: "Dedicated Consultation Support",
+    description:
+      "Our 24/7 customer support is committed to eliminating any confusion or concerns you may have about your order. This unwavering support aims to keep both parties on the same page, fostering a collaborative journey without deviation from the intended direction.",
+  },
+  {
+    title: "Thoughtful Revisions",
+    description:
+      "Embracing the philosophy that revisions are integral to crafting quality content, we offer unlimited revisions. Whether it's a sentence, paragraph, or entire chapter, we welcome changes to ensure the final manuscript meets and exceeds your expectations.",
+  },
+  {
+    title: "Thorough Editing and Formatting:",
+    description:
+      "Understanding the paramount importance of quality, our expert team engages in rigorous editing and proofreading. This meticulous process ensures the elimination of grammatical errors and enhances the overall structure of the book content.",
+  },
+  {
+    title: "Captivating Book Cover Design:",
+    description:
+      "We recognize that an enticing book cover is the gateway to attracting readers. Our designers craft aesthetically pleasing covers aligned with the book's theme, strategically designed to draw in more online visitors and encourage book exploration and purchase.",
+  },
+];
+
+function setActiveTab2(index) {
+  // Reset all images
+  document.querySelectorAll(".tab-image").forEach((img, i) => {
+    img.classList.remove("border", "border-black");
+  });
+
+  // Set active image
+  const activeImage = document.querySelectorAll(".tab-image")[index];
+  activeImage.classList.add("border", "border-black");
+
+  // Update tab content
+  document.getElementById("tab-title").textContent = tabData2[index].title;
+  document.getElementById("tab-description").textContent =
+    tabData2[index].description;
+}
+
+// Initialize the first tab as active
+setActiveTab2(0);

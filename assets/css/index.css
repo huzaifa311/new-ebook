@@ -389,6 +389,9 @@ body,
 .aboutBanner{
     background-position-x: -130px !important;
 }
+.aboutBanner2{
+    background-position-x: -270px !important;
+}
 
 .bgImage::after {
     content: "";
