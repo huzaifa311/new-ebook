@@ -389,3 +389,20 @@ body,
 .aboutBanner{
     background-position-x: -130px !important;
 }
+
+.bgImage::after {
+    content: "";
+    background-image: url(/assets/images/av-bg-img.png);
+    position: absolute;
+    top: 10%;
+    left: 0 !important;
+    width: 100%;
+    height: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.bgImage:hover:after{
+    background-image: url(/assets/images/av-bg-hover-img.png)
+}
