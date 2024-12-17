@@ -117,7 +117,6 @@ function setActiveTab(index) {
 // Initialize the first tab as active
 setActiveTab(0);
 
-
 const tabData2 = [
   {
     title: "Smart Execution and Innovative Strategy",
@@ -170,7 +169,6 @@ function setActiveTab2(index) {
 // Initialize the first tab as active
 setActiveTab2(0);
 
-
 const tabData3 = [
   {
     title: "Assessing",
@@ -212,3 +210,25 @@ function setActiveTab3(index) {
 
 // Initialize the first tab as active
 setActiveTab3(0);
+
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabPanels = document.querySelectorAll(".tab-panel");
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove active class from all buttons and panels
+    tabButtons.forEach((btn) => {
+      btn.classList.remove("active", "text-white", "bg-[var(--theme)]");
+      btn.classList.add("text-gray-700", "bg-gray-300");
+    });
+    tabPanels.forEach((panel) => panel.classList.add("hidden"));
+
+    // Add active class to the clicked button and corresponding panel
+    const targetPanel = document.getElementById(
+      button.getAttribute("data-tab")
+    );
+    targetPanel.classList.remove("hidden");
+    button.classList.add("active", "text-white", "bg-[var(--theme)]");
+    button.classList.remove("text-gray-700", "bg-gray-300");
+  });
+});

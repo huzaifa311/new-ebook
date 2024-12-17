@@ -41,7 +41,7 @@
                     <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                         Cover Design</a>
                     <a href="./ebook-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Cover Design</a>
-                    <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Writing</a>
+                    <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Writing</a>
                     <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Marketing</a>
                     <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography Writing</a>
                     <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir Writing</a>
@@ -104,7 +104,7 @@
                 <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                     Cover Design</a>
                 <a href="./ebook-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Cover Design</a>
-                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Writing</a>
+                <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Writing</a>
                 <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Marketing</a>
                 <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography Writing</a>
                 <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir Writing</a>
@@ -420,112 +420,104 @@
     </section>
 
     <section class="md:w-[79.4%] w-[90%] mx-auto mt-24">
+        <!-- Title -->
         <h1 class="w-fit text-center md:text-[40px] text-3xl capitalize mx-auto font-[600]">
             Take A Look at <span class="text-[var(--theme2)]">Our Portfolio</span>
         </h1>
         <p class="text-[16px] font-[400] text-center mt-2">At Best Book Publisher, we find satisfaction in our extensive
             portfolio, demonstrating our proficiency across a wide array of industries and niches.</p>
-        <div class="swiper mySwiper mt-11">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/1.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
+
+        <!-- Tabs -->
+        <div class="mt-6 flex justify-center gap-4">
+            <button class="tab-button active px-6 py-3 text-white bg-[var(--theme)] rounded-l" data-tab="fiction">Fiction</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300" data-tab="nonfiction">Non Fiction</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r" data-tab="biography">Biography</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r" data-tab="children">Children</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r" data-tab="Informative">Informative</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content mt-6">
+            <!-- Fiction Tab -->
+            <div id="fiction" class="tab-panel block">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="./assets/images/bookCover/1.webp" alt="Book 1" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/2.webp" alt="Book 2" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/3.webp" alt="Book 3" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/4.webp" alt="Book 4" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/5.webp" alt="Book 5" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/6.webp" alt="Book 1" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/7.webp" alt="Book 2" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/8.webp" alt="Book 3" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/9.webp" alt="Book 4" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/10.webp" alt="Book 5" class="rounded shadow-md">
                 </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/2.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
+            </div>
+
+            <!-- Non Fiction Tab -->
+            <div id="nonfiction" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="./assets/images/bookCover/11.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/12.webp" alt="Book 7" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/13.webp" alt="Book 8" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/14.webp" alt="Book 9" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/15.webp" alt="Book 10" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/16.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/17.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/18.webp" alt="Book 7" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/19.webp" alt="Book 8" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/20.webp" alt="Book 9" class="rounded shadow-md">
                 </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/3.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
+            </div>
+
+            <!-- Biography Tab -->
+            <div id="biography" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="./assets/images/bookCover/21.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/22.webp" alt="Book 7" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/23.webp" alt="Book 8" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/24.webp" alt="Book 9" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/25.webp" alt="Book 10" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/26.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/27.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/28.webp" alt="Book 7" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/29.webp" alt="Book 8" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/30.webp" alt="Book 9" class="rounded shadow-md">
                 </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/4.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
+            </div>
+
+            <!-- Children Tab -->
+            <div id="children" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="./assets/images/bookCover/31.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/32.webp" alt="Book 7" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/33.webp" alt="Book 8" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/34.webp" alt="Book 9" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/35.webp" alt="Book 10" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/36.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/37.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/38.webp" alt="Book 7" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/39.webp" alt="Book 8" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/40.webp" alt="Book 9" class="rounded shadow-md">
                 </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/5.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/6.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/7.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/8.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/9.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/10.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/11.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/12.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/13.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/14.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/15.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/16.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/17.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/18.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/19.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/20.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/21.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/22.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/23.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/bookCover/24.webp" alt="Book Cover"
-                        class="w-[95%] h-auto rounded-lg shadow-xl">
+            </div>
+
+            <!-- Informative Tab -->
+            <div id="Informative" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="./assets/images/bookCover/41.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/42.webp" alt="Book 7" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/43.webp" alt="Book 8" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/44.webp" alt="Book 9" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/45.webp" alt="Book 10" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/46.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/47.webp" alt="Book 6" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/48.webp" alt="Book 7" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/49.webp" alt="Book 8" class="rounded shadow-md">
+                    <img src="./assets/images/bookCover/50.webp" alt="Book 9" class="rounded shadow-md">
                 </div>
             </div>
         </div>
-
     </section>
 
     <section class="mt-20 md:w-[80vw] w-[90vw] mx-auto">
