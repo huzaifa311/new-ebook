@@ -100,18 +100,20 @@ const tabData = [
 
 function setActiveTab(index) {
   // Reset all images
-  document.querySelectorAll(".tab-image").forEach((img, i) => {
-    img.classList.remove("border", "border-black");
-  });
+  try {
+    document.querySelectorAll(".tab-image").forEach((img, i) => {
+      img.classList.remove("border", "border-black");
+    });
 
-  // Set active image
-  const activeImage = document.querySelectorAll(".tab-image")[index];
-  activeImage.classList.add("border", "border-black");
+    // Set active image
+    const activeImage = document.querySelectorAll(".tab-image")[index];
+    activeImage.classList.add("border", "border-black");
 
-  // Update tab content
-  document.getElementById("tab-title").textContent = tabData[index].title;
-  document.getElementById("tab-description").textContent =
-    tabData[index].description;
+    // Update tab content
+    document.getElementById("tab-title").textContent = tabData[index].title;
+    document.getElementById("tab-description").textContent =
+      tabData[index].description;
+  } catch (error) {}
 }
 
 // Initialize the first tab as active
@@ -152,18 +154,20 @@ const tabData2 = [
 
 function setActiveTab2(index) {
   // Reset all images
-  document.querySelectorAll(".tab-image").forEach((img, i) => {
-    img.classList.remove("border", "border-black");
-  });
+  try {
+    document.querySelectorAll(".tab-image").forEach((img, i) => {
+      img.classList.remove("border", "border-black");
+    });
 
-  // Set active image
-  const activeImage = document.querySelectorAll(".tab-image")[index];
-  activeImage.classList.add("border", "border-black");
+    // Set active image
+    const activeImage = document.querySelectorAll(".tab-image")[index];
+    activeImage.classList.add("border", "border-black");
 
-  // Update tab content
-  document.getElementById("tab-title").textContent = tabData2[index].title;
-  document.getElementById("tab-description").textContent =
-    tabData2[index].description;
+    // Update tab content
+    document.getElementById("tab-title").textContent = tabData2[index].title;
+    document.getElementById("tab-description").textContent =
+      tabData2[index].description;
+  } catch (error) {}
 }
 
 // Initialize the first tab as active
@@ -194,18 +198,20 @@ const tabData3 = [
 
 function setActiveTab3(index) {
   // Reset all images
-  document.querySelectorAll(".tab-image").forEach((img, i) => {
-    img.classList.remove("border", "border-black");
-  });
+  try {
+    document.querySelectorAll(".tab-image").forEach((img, i) => {
+      img.classList.remove("border", "border-black");
+    });
 
-  // Set active image
-  const activeImage = document.querySelectorAll(".tab-image")[index];
-  activeImage.classList.add("border", "border-black");
+    // Set active image
+    const activeImage = document.querySelectorAll(".tab-image")[index];
+    activeImage.classList.add("border", "border-black");
 
-  // Update tab content
-  document.getElementById("tab-title").textContent = tabData3[index].title;
-  document.getElementById("tab-description").textContent =
-    tabData3[index].description;
+    // Update tab content
+    document.getElementById("tab-title").textContent = tabData3[index].title;
+    document.getElementById("tab-description").textContent =
+      tabData3[index].description;
+  } catch (error) {}
 }
 
 // Initialize the first tab as active
@@ -216,6 +222,8 @@ const tabPanels = document.querySelectorAll(".tab-panel");
 
 tabButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    console.log("ghgf");
+
     // Remove active class from all buttons and panels
     tabButtons.forEach((btn) => {
       btn.classList.remove("active", "text-white", "bg-[var(--theme)]");
