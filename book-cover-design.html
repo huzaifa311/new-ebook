@@ -14,135 +14,143 @@
 
 <body>
     <header
-    class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] md:pt-0 pt-8 md:px-0 px-4">
-    <img src="assets/images/home/logo.png" alt="logo" class="md:w-[17%] w-44" />
-    <nav class="hidden md:flex items-center !text-white">
-        <div>
-            <a href="./index.html" class="ml-6">Home</a>
+        class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] md:pt-0 pt-8 md:px-0 px-4">
+        <img src="assets/images/home/logo.png" alt="logo" class="md:w-[17%] w-44" />
+        <nav class="hidden md:flex items-center !text-white">
+            <div>
+                <a href="./index.html" class="ml-6">Home</a>
+            </div>
+            <div>
+                <a href="./about-us.html" class="ml-6">About
+                    Us</a>
+            </div>
+            <div class="relative !z-50 group">
+                <a href="#" class="ml-6 flex items-center">
+                    Services
+                    <i class="fa fa-angle-down ml-2"></i>
+                </a>
+                <!-- Dropdown Menu -->
+                <div
+                    class="absolute hidden group-hover:flex flex-col bg-white text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[335px]">
+                    <a href="./professional-ghostwriting-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
+                    <a href="./ebook-writing-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Writing</a>
+                    <a href="./book-editing-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Editing</a>
+                    <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Cover Design</a>
+                    <a href="./ebook-cover-design.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Cover Design</a>
+                    <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Writing</a>
+                    <a href="./book-marketing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Marketing</a>
+                    <a href="./biography-writing.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography Writing</a>
+                    <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir
+                        Writing</a>
+                    <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Printing</a>
+                    <a href="./book-trailer-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Trailer</a>
+                    <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
+                    <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author Website</a>
+                    <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Illustration</a>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="ml-6">Blog</a>
+            </div>
+            <div>
+                <a href="#" class="ml-6">Contact Us</a>
+            </div>
+        </nav>
+        <div class="md:flex hidden gap-2 items-center">
+            <button
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-white rotate-90">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between text-white">
+                <div class="text-red-500 text-lg">Live Chat</div>
+                <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+            </div>
+        </div>
+
+        <div onclick="handleMobileMenu()"
+            class="flex md:hidden h-11 border-2 w-16 gradientBg justify-center items-center">
+            <i class="fa fa-bars text-white text-xl" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div id="mobileMenu"
+        class="!h-0 !overflow-hidden !transition-all md:hidden !duration-700 w-[92%] left-[50%] right-[50%] -translate-x-[50%] absolute top-32 bg-[url(assets/images/home/menu-bg.jpg)] bg-cover bg-no-repeat bg-center rounded-lg text-black space-y-7">
+        <div class="pt-8">
+            <a href="./index.html" class="pl-6">Home</a>
         </div>
         <div>
-            <a href="./about-us.html" class="ml-6">About
-                Us</a>
+            <a href="./about-us.html" class="pl-6">About Us</a>
         </div>
-        <div class="relative !z-50 group">
-            <a href="#" class="ml-6 flex items-center">
+        <div id="dropCont" class="relative !z-50 group">
+            <a href="#" class="pl-6 flex items-center">
                 Services
                 <i class="fa fa-angle-down ml-2"></i>
             </a>
             <!-- Dropdown Menu -->
-            <div
-                class="absolute hidden group-hover:flex flex-col bg-white text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[335px]">
+            <div id="dropMob"
+                class="absolute !hidden flex-col bg-black text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[90vw]">
                 <a href="./professional-ghostwriting-services.html"
                     class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
                 <a href="./ebook-writing-services.html"
                     class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Writing</a>
-                <a href="./book-editing-services.html"
-                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Editing</a>
+                <a href="./book-editing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Editing</a>
                 <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                     Cover Design</a>
-                <a href="./ebook-cover-design.html"
-                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Cover Design</a>
+                <a href="./ebook-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook
+                    Cover Design</a>
                 <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                     Writing</a>
                 <a href="./book-marketing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                     Marketing</a>
-                <a href="./biography-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography Writing</a>
-                <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir Writing</a>
-                <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Printing</a>
-                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Trailer</a>
+                <a href="./biography-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography
+                    Writing</a>
+                <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir
+                    Writing</a>
+                <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Printing</a>
+                <a href="./book-trailer-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Trailer</a>
                 <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
                 <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author Website</a>
                 <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Illustration</a>
             </div>
         </div>
         <div>
-            <a href="#" class="ml-6">Blog</a>
+            <a href="#" class="pl-6">Blog</a>
         </div>
         <div>
-            <a href="#" class="ml-6">Contact Us</a>
+            <a href="#" class="pl-6">Contact Us</a>
         </div>
-    </nav>
-    <div class="md:flex hidden gap-2 items-center">
-        <button
-            class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
-            Get Started Today
-            <i class="fa fa-angle-right"></i>
-        </button>
-        <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-white rotate-90">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-        </div>
-        <div class="flex flex-col justify-between text-white">
-            <div class="text-red-500 text-lg">Live Chat</div>
-            <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
-        </div>
-    </div>
 
-    <div onclick="handleMobileMenu()"
-        class="flex md:hidden h-11 border-2 w-16 gradientBg justify-center items-center">
-        <i class="fa fa-bars text-white text-xl" aria-hidden="true"></i>
-    </div>
-</header>
-<div id="mobileMenu"
-    class="!h-0 !overflow-hidden !transition-all md:hidden !duration-700 w-[92%] left-[50%] right-[50%] -translate-x-[50%] absolute top-32 bg-[url(assets/images/home/menu-bg.jpg)] bg-cover bg-no-repeat bg-center rounded-lg text-black space-y-7">
-    <div class="pt-8">
-        <a href="./index.html" class="pl-6">Home</a>
-    </div>
-    <div>
-        <a href="./about-us.html" class="pl-6">About Us</a>
-    </div>
-    <div id="dropCont" class="relative !z-50 group">
-        <a href="#" class="pl-6 flex items-center">
-            Services
-            <i class="fa fa-angle-down ml-2"></i>
-        </a>
-        <!-- Dropdown Menu -->
-        <div id="dropMob"
-            class="absolute !hidden flex-col bg-black text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[90vw]">
-            <a href="./professional-ghostwriting-services.html"
-                class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
-            <a href="./ebook-writing-services.html"
-                class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Writing</a>
-            <a href="./book-editing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Editing</a>
-            <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Cover Design</a>
-            <a href="./ebook-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook
-                Cover Design</a>
-            <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Writing</a>
-            <a href="./book-marketing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Marketing</a>
-            <a href="./biography-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography Writing</a>
-            <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir Writing</a>
-            <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Printing</a>
-            <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Trailer</a>
-            <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
-            <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author Website</a>
-            <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Illustration</a>
+        <div class="md:hidden flex gap-1 items-center mt-4 w-[95%] mx-auto">
+            <button
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-black rotate-90">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between text-black">
+                <div class="text-red-500 text-lg">Live Chat</div>
+                <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+            </div>
         </div>
     </div>
-    <div>
-        <a href="#" class="pl-6">Blog</a>
-    </div>
-    <div>
-        <a href="#" class="pl-6">Contact Us</a>
-    </div>
-
-    <div class="md:hidden flex gap-1 items-center mt-4 w-[95%] mx-auto">
-        <button
-            class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
-            Get Started Today
-            <i class="fa fa-angle-right"></i>
-        </button>
-        <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-black rotate-90">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-        </div>
-        <div class="flex flex-col justify-between text-black">
-            <div class="text-red-500 text-lg">Live Chat</div>
-            <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
-        </div>
-    </div>
-</div>
 
     <main
         class="bg-[url(assets/images/services/Ghostwriting-min.png)] !h-fit pb-40 md:pb-0 md:!max-h-[250dvh] md:!bg-center bg-no-repeat bg-cover pt-[173px] md:min-h-[130vh] min-h-[600px] flex justify-center aboutBanner2">
@@ -298,7 +306,9 @@
                 Make Your Book Appealing with A Professional Book Cover Design
             </h1>
             <p class="text-[14px] text-center">
-                We know that the cover of your book serves as a first impression. book cover design company seek to make that impression not simply memorable but engaging. No matter if you're a first-time writer or a seasoned pro, our designs will help your book stand out from the crowd.
+                We know that the cover of your book serves as a first impression. book cover design company seek to make
+                that impression not simply memorable but engaging. No matter if you're a first-time writer or a seasoned
+                pro, our designs will help your book stand out from the crowd.
             </p>
         </div>
         <div class="swiper mySwiper6 ">
@@ -315,7 +325,8 @@
                                 <div class="divider"></div>
                             </div>
                             <p class="service-desc">
-                                Our company possesses a team of creative professionals skilled in translating authors' visions into visually compelling and marketable book covers.
+                                Our company possesses a team of creative professionals skilled in translating authors'
+                                visions into visually compelling and marketable book covers.
                             </p>
                             <div class="service-btn mt-4">
                                 <a href="ebook-writing-services" tabindex="-1">Learn More<i class="fa fa-plus"
@@ -336,7 +347,8 @@
                                 <div class="divider"></div>
                             </div>
                             <p class="service-desc">
-                                Our company offers personalized solutions, tailoring book covers to match the unique themes, genres, and preferences of individual authors.
+                                Our company offers personalized solutions, tailoring book covers to match the unique
+                                themes, genres, and preferences of individual authors.
                             </p>
                             <div class="service-btn mt-4">
                                 <a href="ebook-editing-services" tabindex="-1">Learn More<i class="fa fa-plus"
@@ -357,7 +369,8 @@
                                 <div class="divider"></div>
                             </div>
                             <p class="service-desc">
-                                Our company stays abreast of current design trends and understands the target audience, enabling them to create book covers that stand out in the market.
+                                Our company stays abreast of current design trends and understands the target audience,
+                                enabling them to create book covers that stand out in the market.
                             </p>
                             <div class="service-btn mt-4">
                                 <a href="ebook-proofreading-services" tabindex="-1">Learn More<i class="fa fa-plus"
@@ -378,7 +391,8 @@
                                 <div class="divider"></div>
                             </div>
                             <p class="service-desc">
-                                Our company engages in a collaborative process with authors, seeking their input to ensure the cover aligns with the author's vision.
+                                Our company engages in a collaborative process with authors, seeking their input to
+                                ensure the cover aligns with the author's vision.
                             </p>
                             <div class="service-btn mt-4">
                                 <a href="ebook-proofreading-services" tabindex="-1">Learn More<i class="fa fa-plus"
@@ -401,9 +415,12 @@
                     class="w-[332px] object-contain -mt-16 h-[568px] md:ml-auto">
             </div>
             <div class="md:col-span-5 md:mt-16">
-                <h1 class="text-[28px] font-[600] leading-[40px]">The  <span
-                        class="text-[#3ebec1] text-[38px]">Art of Teamwork  </span> in the Designing Process</h1>
-                <p class="text-[14px] font-[400] mt-3">Our design process is open and encourages input from all parties. Your ideas and feedback are not only welcome, but essential to the design process, as we strive to realize your vision. From first concept sketches to the final cover reveal, we ensure that you are an active participant in the creative process.
+                <h1 class="text-[28px] font-[600] leading-[40px]">The <span class="text-[#3ebec1] text-[38px]">Art of
+                        Teamwork </span> in the Designing Process</h1>
+                <p class="text-[14px] font-[400] mt-3">Our design process is open and encourages input from all parties.
+                    Your ideas and feedback are not only welcome, but essential to the design process, as we strive to
+                    realize your vision. From first concept sketches to the final cover reveal, we ensure that you are
+                    an active participant in the creative process.
                 </p>
                 <div class="flex gap-2 md:gap-8 items-center mt-6">
                     <button
@@ -428,9 +445,10 @@
     <section class="py-24 bg-[url(/assets/images/home/usman-sec-bg.png)] bg-top bg-cover bg-no-repeat">
         <div class="grid md:grid-cols-12 px-2 grid-cols-1 sm:px-[80px] items-start !gap-5">
             <div class="sm:col-span-7">
-                <h3 class="text-[24px] sm:pr-28 font-[600] leading-[30px] ">Make Us Your Go-To  <span
-                        class="capitalize text-[var(--theme2)]">Source for Book Cover Design  </span>Services</h3>
-                <p class="mt-4"> Get set to design a killer cover for your book! Get in touch with us today so we can begin the thrilling process of developing a logo and brand identity for your book.
+                <h3 class="text-[24px] sm:pr-28 font-[600] leading-[30px] ">Make Us Your Go-To <span
+                        class="capitalize text-[var(--theme2)]">Source for Book Cover Design </span>Services</h3>
+                <p class="mt-4"> Get set to design a killer cover for your book! Get in touch with us today so we can
+                    begin the thrilling process of developing a logo and brand identity for your book.
                 </p>
             </div>
             <button
@@ -460,7 +478,9 @@
                 </div>
                 <h1 class="text-[20px] font-[600] px-14 text-[#0A6688] text-center mt-10">Tech-Savvy
                 </h1>
-                <p class="text-[14px] font-[400] px-7 mt-2 text-center">Utilizing cutting-edge technologies like Adobe Photoshop and Illustrator, we ensure meticulous attention to detail, making your cover stand out, no matter any genre.
+                <p class="text-[14px] font-[400] px-7 mt-2 text-center">Utilizing cutting-edge technologies like Adobe
+                    Photoshop and Illustrator, we ensure meticulous attention to detail, making your cover stand out, no
+                    matter any genre.
 
                 </p>
             </div>
@@ -472,7 +492,9 @@
                 </div>
                 <h1 class="text-[20px] font-[600] px-14 text-[#0A6688] text-center mt-10">Acknowledging Feedbacks
                 </h1>
-                <p class="text-[14px] font-[400] px-7 mt-2 text-center">Your feedback and suggestions are important to us. Our customer support team is available 24/7, ready to address any inquiries regarding the services we offer.
+                <p class="text-[14px] font-[400] px-7 mt-2 text-center">Your feedback and suggestions are important to
+                    us. Our customer support team is available 24/7, ready to address any inquiries regarding the
+                    services we offer.
 
                 </p>
             </div>
@@ -485,7 +507,9 @@
                 <h1 class="text-[20px] font-[600] px-14 text-[#0A6688] text-center mt-10">Innovation
 
                 </h1>
-                <p class="text-[14px] font-[400] px-7 mt-2 text-center">Elevating your concepts to new heights is at the core of our creative expertise. Our team crafts unique designs that instantly captivate, ensuring your book cover stands out.
+                <p class="text-[14px] font-[400] px-7 mt-2 text-center">Elevating your concepts to new heights is at the
+                    core of our creative expertise. Our team crafts unique designs that instantly captivate, ensuring
+                    your book cover stands out.
 
                 </p>
             </div>
@@ -497,7 +521,9 @@
                 </div>
                 <h1 class="text-[20px] font-[600] px-14 text-[#0A6688] text-center mt-10">Straight Procedure
                 </h1>
-                <p class="text-[14px] font-[400] px-7 mt-2 text-center">We pride ourselves on offering transparency in our work. Every aspect of the process is shared with our clients, showcasing our reliability as a trusted professional partner.
+                <p class="text-[14px] font-[400] px-7 mt-2 text-center">We pride ourselves on offering transparency in
+                    our work. Every aspect of the process is shared with our clients, showcasing our reliability as a
+                    trusted professional partner.
 
                 </p>
             </div>
@@ -508,7 +534,9 @@
                     <img src="/assets/images/home/1.png" alt="Lightbulb Icon" class="w-3/4 h-3/4" />
                 </div>
                 <h1 class="text-[20px] font-[600] px-14 text-[#0A6688] text-center mt-10">Experience</h1>
-                <p class="text-[14px] font-[400] px-7 mt-2 text-center">For unparalleled customer satisfaction, trust our seasoned book designers. With years of industry experience, we consistently deliver high-quality work.
+                <p class="text-[14px] font-[400] px-7 mt-2 text-center">For unparalleled customer satisfaction, trust
+                    our seasoned book designers. With years of industry experience, we consistently deliver high-quality
+                    work.
 
                 </p>
             </div>
@@ -527,11 +555,15 @@
 
         <!-- Tabs -->
         <div class="mt-6 flex justify-center gap-4">
-            <button class="tab-button active px-6 py-3 text-white bg-[var(--theme)] rounded-l" data-tab="fiction">Fiction</button>
+            <button class="tab-button active px-6 py-3 text-white bg-[var(--theme)] rounded-l"
+                data-tab="fiction">Fiction</button>
             <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300" data-tab="nonfiction">Non Fiction</button>
-            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r" data-tab="biography">Biography</button>
-            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r" data-tab="children">Children</button>
-            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r" data-tab="Informative">Informative</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="biography">Biography</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="children">Children</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="Informative">Informative</button>
         </div>
 
         <!-- Tab Content -->
@@ -709,7 +741,8 @@
                     <span class="process-divider">
                         <div class="dividers-process"></div>
                     </span>
-                    <p class="text-[14px] font-[400] text-center">Our dedicated team of designers initiates the creative process with thorough research into the book's genre and target audience.
+                    <p class="text-[14px] font-[400] text-center">Our dedicated team of designers initiates the creative
+                        process with thorough research into the book's genre and target audience.
 
 
                     </p>
@@ -724,7 +757,8 @@
                     <span class="process-divider">
                         <div class="dividers-process"></div>
                     </span>
-                    <p class="text-[14px] font-[400] text-center">This phase involves the exploration of visual ideas and artistic elements that align with the author's vision and the book's essence.
+                    <p class="text-[14px] font-[400] text-center">This phase involves the exploration of visual ideas
+                        and artistic elements that align with the author's vision and the book's essence.
 
                     </p>
                 </div>
@@ -737,7 +771,9 @@
                     <span class="process-divider">
                         <div class="dividers-process"></div>
                     </span>
-                    <p class="text-[14px] font-[400] text-center">Upon presenting the initial concepts, we prioritize author collaboration. The author reviews the designs, offering valuable input on their preferences.
+                    <p class="text-[14px] font-[400] text-center">Upon presenting the initial concepts, we prioritize
+                        author collaboration. The author reviews the designs, offering valuable input on their
+                        preferences.
 
                     </p>
                 </div>
@@ -750,7 +786,10 @@
                     <span class="process-divider">
                         <div class="dividers-process"></div>
                     </span>
-                    <p class="text-[14px] font-[400] text-center">Following the feedback loop, our designers meticulously refine the chosen concept(s). This includes fine-tuning details, adjusting typography, and ensuring visual cohesion. The finalization stage marks the completion of the design.
+                    <p class="text-[14px] font-[400] text-center">Following the feedback loop, our designers
+                        meticulously refine the chosen concept(s). This includes fine-tuning details, adjusting
+                        typography, and ensuring visual cohesion. The finalization stage marks the completion of the
+                        design.
 
                     </p>
                 </div>
@@ -762,9 +801,18 @@
                 <h5 class="text-[var(--theme2)] font-[600]">Our Process</h5>
             </div>
             <div>
-                <h3 class="text-[26px] font-[600] leading-[42px] mt-4 ">Our Straightforward  <span
-                        class="capitalize text-[var(--theme2)]">Book Cover Design  </span>Process</h3>
-                <p class="mt-3 text-[14px]">At Best Book Publisher, we employ a streamlined and client-centric approach to crafting captivating book covers. Our process begins with a comprehensive understanding of your book's essence, genre, and target audience. Through collaborative sessions and iterative design reviews, our skilled designers work closely with you to bring your vision to life. We prioritize transparency, ensuring you are an integral part of the design evolution. Beyond aesthetics, we focus on marketability, analyzing industry trends to create a cover that stands out. The result is a professionally crafted, visually appealing book cover that not only enhances your book's overall appeal but also communicates its unique narrative to the world. Explore our operational process to witness the thoughtful and strategic methodology that defines our approach to book cover design, aiming to exceed your expectations with precision, creativity, and unwavering commitment to quality
+                <h3 class="text-[26px] font-[600] leading-[42px] mt-4 ">Our Straightforward <span
+                        class="capitalize text-[var(--theme2)]">Book Cover Design </span>Process</h3>
+                <p class="mt-3 text-[14px]">At Best Book Publisher, we employ a streamlined and client-centric approach
+                    to crafting captivating book covers. Our process begins with a comprehensive understanding of your
+                    book's essence, genre, and target audience. Through collaborative sessions and iterative design
+                    reviews, our skilled designers work closely with you to bring your vision to life. We prioritize
+                    transparency, ensuring you are an integral part of the design evolution. Beyond aesthetics, we focus
+                    on marketability, analyzing industry trends to create a cover that stands out. The result is a
+                    professionally crafted, visually appealing book cover that not only enhances your book's overall
+                    appeal but also communicates its unique narrative to the world. Explore our operational process to
+                    witness the thoughtful and strategic methodology that defines our approach to book cover design,
+                    aiming to exceed your expectations with precision, creativity, and unwavering commitment to quality
                 </p>
             </div>
             <div class="flex md:gap-20 gap-2 items-center mt-9">
