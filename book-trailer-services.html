@@ -14,144 +14,148 @@
 
 <body>
     <header
-    class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] md:pt-0 pt-8 md:px-0 px-4">
-    <img src="assets/images/home/logo.png" alt="logo" class="md:w-[17%] w-44" />
-    <nav class="hidden md:flex items-center !text-white">
-        <div>
-            <a href="./index.html" class="ml-6">Home</a>
+        class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] md:pt-0 pt-8 md:px-0 px-4">
+        <img src="assets/images/home/logo.png" alt="logo" class="md:w-[17%] w-44" />
+        <nav class="hidden md:flex items-center !text-white">
+            <div>
+                <a href="./index.html" class="ml-6">Home</a>
+            </div>
+            <div>
+                <a href="./about-us.html" class="ml-6">About
+                    Us</a>
+            </div>
+            <div class="relative !z-50 group">
+                <a href="#" class="ml-6 flex items-center">
+                    Services
+                    <i class="fa fa-angle-down ml-2"></i>
+                </a>
+                <!-- Dropdown Menu -->
+                <div
+                    class="absolute hidden group-hover:flex flex-col bg-white text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[335px]">
+                    <a href="./professional-ghostwriting-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
+                    <a href="./ebook-writing-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Writing</a>
+                    <a href="./book-editing-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Editing</a>
+                    <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Cover Design</a>
+                    <a href="./ebook-cover-design.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Cover Design</a>
+                    <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Writing</a>
+                    <a href="./book-marketing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Marketing</a>
+                    <a href="./biography-writing.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography Writing</a>
+                    <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir
+                        Writing</a>
+                    <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Printing</a>
+                    <a href="./book-trailer-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Trailer</a>
+                    <a href="./audiobook-publishing-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
+                    <a href="./author-website-design.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author Website</a>
+                    <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Illustration</a>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="ml-6">Blog</a>
+            </div>
+            <div>
+                <a href="#" class="ml-6">Contact Us</a>
+            </div>
+        </nav>
+        <div class="md:flex hidden gap-2 items-center">
+            <button
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-white rotate-90">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between text-white">
+                <div class="text-red-500 text-lg">Live Chat</div>
+                <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+            </div>
+        </div>
+
+        <div onclick="handleMobileMenu()"
+            class="flex md:hidden h-11 border-2 w-16 gradientBg justify-center items-center">
+            <i class="fa fa-bars text-white text-xl" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div id="mobileMenu"
+        class="!h-0 !overflow-hidden !transition-all md:hidden !duration-700 w-[92%] left-[50%] right-[50%] -translate-x-[50%] absolute top-32 bg-[url(assets/images/home/menu-bg.jpg)] bg-cover bg-no-repeat bg-center rounded-lg text-black space-y-7">
+        <div class="pt-8">
+            <a href="./index.html" class="pl-6">Home</a>
         </div>
         <div>
-            <a href="./about-us.html" class="ml-6">About
-                Us</a>
+            <a href="./about-us.html" class="pl-6">About Us</a>
         </div>
-        <div class="relative !z-50 group">
-            <a href="#" class="ml-6 flex items-center">
+        <div id="dropCont" class="relative !z-50 group">
+            <a href="#" class="pl-6 flex items-center">
                 Services
                 <i class="fa fa-angle-down ml-2"></i>
             </a>
             <!-- Dropdown Menu -->
-            <div
-                class="absolute hidden group-hover:flex flex-col bg-white text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[335px]">
+            <div id="dropMob"
+                class="absolute !hidden flex-col bg-black text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[90vw]">
                 <a href="./professional-ghostwriting-services.html"
                     class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
                 <a href="./ebook-writing-services.html"
                     class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Writing</a>
-                <a href="./book-editing-services.html"
-                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Editing</a>
+                <a href="./book-editing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Editing</a>
                 <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                     Cover Design</a>
-                <a href="./ebook-cover-design.html"
-                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Cover Design</a>
+                <a href="./ebook-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook
+                    Cover Design</a>
                 <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                     Writing</a>
                 <a href="./book-marketing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                     Marketing</a>
-                <a href="./biography-writing.html"
-                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography Writing</a>
+                <a href="./biography-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography
+                    Writing</a>
                 <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir
                     Writing</a>
                 <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
                     Printing</a>
-                <a href="./book-trailer-services.html"
-                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Trailer</a>
-                <a href="./audiobook-publishing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
-                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author Website</a>
+                <a href="./book-trailer-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Trailer</a>
+                <a href="./audiobook-publishing-services.html"
+                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
+                <a href="./author-website-design.html"
+                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author Website</a>
                 <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Illustration</a>
             </div>
         </div>
         <div>
-            <a href="#" class="ml-6">Blog</a>
+            <a href="#" class="pl-6">Blog</a>
         </div>
         <div>
-            <a href="#" class="ml-6">Contact Us</a>
+            <a href="#" class="pl-6">Contact Us</a>
         </div>
-    </nav>
-    <div class="md:flex hidden gap-2 items-center">
-        <button
-            class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
-            Get Started Today
-            <i class="fa fa-angle-right"></i>
-        </button>
-        <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-white rotate-90">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-        </div>
-        <div class="flex flex-col justify-between text-white">
-            <div class="text-red-500 text-lg">Live Chat</div>
-            <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
-        </div>
-    </div>
 
-    <div onclick="handleMobileMenu()"
-        class="flex md:hidden h-11 border-2 w-16 gradientBg justify-center items-center">
-        <i class="fa fa-bars text-white text-xl" aria-hidden="true"></i>
-    </div>
-</header>
-<div id="mobileMenu"
-    class="!h-0 !overflow-hidden !transition-all md:hidden !duration-700 w-[92%] left-[50%] right-[50%] -translate-x-[50%] absolute top-32 bg-[url(assets/images/home/menu-bg.jpg)] bg-cover bg-no-repeat bg-center rounded-lg text-black space-y-7">
-    <div class="pt-8">
-        <a href="./index.html" class="pl-6">Home</a>
-    </div>
-    <div>
-        <a href="./about-us.html" class="pl-6">About Us</a>
-    </div>
-    <div id="dropCont" class="relative !z-50 group">
-        <a href="#" class="pl-6 flex items-center">
-            Services
-            <i class="fa fa-angle-down ml-2"></i>
-        </a>
-        <!-- Dropdown Menu -->
-        <div id="dropMob"
-            class="absolute !hidden flex-col bg-black text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[90vw]">
-            <a href="./professional-ghostwriting-services.html"
-                class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
-            <a href="./ebook-writing-services.html"
-                class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Writing</a>
-            <a href="./book-editing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Editing</a>
-            <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Cover Design</a>
-            <a href="./ebook-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook
-                Cover Design</a>
-            <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Writing</a>
-            <a href="./book-marketing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Marketing</a>
-            <a href="./biography-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography
-                Writing</a>
-            <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir
-                Writing</a>
-            <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Printing</a>
-            <a href="./book-trailer-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
-                Trailer</a>
-            <a href="./audiobook-publishing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
-            <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author Website</a>
-            <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Illustration</a>
+        <div class="md:hidden flex gap-1 items-center mt-4 w-[95%] mx-auto">
+            <button
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-black rotate-90">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between text-black">
+                <div class="text-red-500 text-lg">Live Chat</div>
+                <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
+            </div>
         </div>
     </div>
-    <div>
-        <a href="#" class="pl-6">Blog</a>
-    </div>
-    <div>
-        <a href="#" class="pl-6">Contact Us</a>
-    </div>
-
-    <div class="md:hidden flex gap-1 items-center mt-4 w-[95%] mx-auto">
-        <button
-            class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
-            Get Started Today
-            <i class="fa fa-angle-right"></i>
-        </button>
-        <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-black rotate-90">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-        </div>
-        <div class="flex flex-col justify-between text-black">
-            <div class="text-red-500 text-lg">Live Chat</div>
-            <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (437) 826-2236</a>
-        </div>
-    </div>
-</div>
-
+    c
     <main
         class="bg-[url(assets/images/services/Ghostwriting-min.png)] !h-fit pb-40 md:pb-0 md:!max-h-[250dvh] md:!bg-center bg-no-repeat bg-cover pt-[173px] md:min-h-[130vh] min-h-[600px] flex justify-center aboutBanner2">
         <section class="md:w-[85%] w-[93%] grid md:grid-cols-2 md:gap-0 gap-8">
