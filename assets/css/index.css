@@ -366,7 +366,7 @@ body,
     content: "\f099";
 }
 
-.serviceBox{
+.serviceBox {
     box-shadow: 4px 4px 20px #0000006e;
 }
 
@@ -382,14 +382,15 @@ body,
     background: #0a6688;
 }
 
-.shadowTestimonials{
+.shadowTestimonials {
     box-shadow: 3px 4px 12px #00000047;
 }
 
-.aboutBanner{
+.aboutBanner {
     background-position-x: -130px !important;
 }
-.aboutBanner2{
+
+.aboutBanner2 {
     background-position-x: -270px !important;
 }
 
@@ -406,6 +407,30 @@ body,
     z-index: 10;
 }
 
-.bgImage:hover:after{
+.bgImage:hover:after {
     background-image: url(/assets/images/av-bg-hover-img.png)
+}
+
+.blog-bottom-main h4 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: "Poppins" !important;
+    color: #0a6688;
+}
+
+.blog-bottom-main h5 {
+    font-weight: 600;
+    font-family: "Poppins" !important;
+    font-size: 30px;
+    color: #0a6688;
+}
+
+.blog-bottom-main p, .blog-bottom-main li {
+    color: #000000c4;
+    font-family: "Poppins" !important;
+    font-size: 16px;
+    line-height: 34px;
+    text-transform: none;
+    margin-bottom: 30px;
 }
