@@ -419,6 +419,26 @@ body,
     color: #0a6688;
 }
 
+.blog-bottom-main h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: "Poppins" !important;
+    color: #0a6688;
+    line-height: 50px;
+}
+
+.blog-bottom-main h2 {
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 45px;
+    font-family: "Poppins" !important;
+    color: #0a6688;
+    line-height: 50px;
+}
+
 .blog-bottom-main h5 {
     font-weight: 600;
     font-family: "Poppins" !important;
