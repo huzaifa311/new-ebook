@@ -113,7 +113,7 @@ function setActiveTab(index) {
     document.getElementById("tab-title").textContent = tabData[index].title;
     document.getElementById("tab-description").textContent =
       tabData[index].description;
-  } catch (error) {}
+  } catch (error) { }
 }
 
 // Initialize the first tab as active
@@ -167,7 +167,7 @@ function setActiveTab2(index) {
     document.getElementById("tab-title").textContent = tabData2[index].title;
     document.getElementById("tab-description").textContent =
       tabData2[index].description;
-  } catch (error) {}
+  } catch (error) { }
 }
 
 // Initialize the first tab as active
@@ -211,7 +211,7 @@ function setActiveTab3(index) {
     document.getElementById("tab-title").textContent = tabData3[index].title;
     document.getElementById("tab-description").textContent =
       tabData3[index].description;
-  } catch (error) {}
+  } catch (error) { }
 }
 
 // Initialize the first tab as active
@@ -240,3 +240,13 @@ tabButtons.forEach((button) => {
     button.classList.remove("text-gray-700", "bg-gray-300");
   });
 });
+
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+(function () {
+  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = 'https://embed.tawk.to/67a26212825083258e1005a0/1ij94u6eq';
+  s1.charset = 'UTF-8';
+  s1.setAttribute('crossorigin', '*');
+  s0.parentNode.insertBefore(s1, s0);
+})();
