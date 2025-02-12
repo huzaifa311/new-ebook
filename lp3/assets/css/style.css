@@ -1072,7 +1072,6 @@ footer p span{
     }
 
     .hero-section .hero-content {
-        padding-top: 170px;
         width: 80%;
         align-items: center;
         grid-template-columns: repeat(10, 1fr);
