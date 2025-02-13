@@ -488,7 +488,7 @@ header .nav-container button {
 }
 
 .latest-books {
-    background: url("../images/bg-latest-books.webp") center/cover no-repeat;
+    background: url("../images/bg-latest-books.avif") center/cover no-repeat;
     background-attachment: fixed;
     padding: 3.7rem 5vw 2rem 5vw;
     margin-top: 70px;
@@ -549,62 +549,62 @@ header .nav-container button {
 
 .latest-books .book-1,
 .left-side-1 {
-    background: url('../images/latest-books/1.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/1.avif') no-repeat center/cover;
 }
 
 .latest-books .book-2,
 .left-side-2 {
-    background: url('../images/latest-books/2.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/2.webp') no-repeat center/cover;
 }
 
 .latest-books .book-3,
 .left-side-3 {
-    background: url('../images/latest-books/3.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/3.avif') no-repeat center/cover;
 }
 
 .latest-books .book-4,
 .left-side-4 {
-    background: url('../images/latest-books/4.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/4.avif') no-repeat center/cover;
 }
 
 .latest-books .book-5,
 .left-side-5 {
-    background: url('../images/latest-books/5.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/5.avif') no-repeat center/cover;
 }
 
 .latest-books .book-6,
 .left-side-6 {
-    background: url('../images/latest-books/6.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/6.avif') no-repeat center/cover;
 }
 
 .latest-books .book-7,
 .left-side-7 {
-    background: url('../images/latest-books/7.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/7.avif') no-repeat center/cover;
 }
 
 .latest-books .book-8,
 .left-side-8 {
-    background: url('../images/latest-books/8.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/8.avif') no-repeat center/cover;
 }
 
 .latest-books .book-9,
 .left-side-9 {
-    background: url('../images/latest-books/9.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/9.avif') no-repeat center/cover;
 }
 
 .latest-books .book-10,
 .left-side-10 {
-    background: url('../images/latest-books/10.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/10.webp') no-repeat center/cover;
 }
 
 .latest-books .book-11,
 .left-side-11 {
-    background: url('../images/latest-books/11.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/11.avif') no-repeat center/cover;
 }
 
 .latest-books .book-12,
 .left-side-12 {
-    background: url('../images/latest-books/12.jpg') no-repeat center/cover;
+    background: url('../images/latest-books/12.avif') no-repeat center/cover;
 }
 
 .left-side {
@@ -647,7 +647,7 @@ header .nav-container button {
 
 .contact-us {
     padding: 50px 0;
-    background: url("../images/bg-form.webp") no-repeat center center;
+    background: url("../images/bg-form.avif") no-repeat center center;
     background-size: cover;
 }
 
@@ -667,7 +667,8 @@ header .nav-container button {
     width: fit-content;
 }
 
-.contact-grid h1 {
+.contact-grid h1,
+.modal-content form h1 {
     font-size: 1.75rem;
     font-weight: 700;
     color: #333;
@@ -690,7 +691,8 @@ header .nav-container button {
     border-radius: 20px;
 }
 
-.contact-grid form>*:not(:first-child) {
+.contact-grid form>*:not(:first-child),
+.modal-content form>*:not(:first-child) {
     margin-top: 16px;
 }
 
@@ -702,24 +704,29 @@ header .nav-container button {
 }
 
 .contact-grid form input:focus,
-.contact-grid form textarea:focus {
+.contact-grid form textarea:focus,
+.modal-content form input:focus,
+.modal-content form textarea:focus{
     outline: none;
 }
 
 .contact-grid form input,
-.contact-grid form textarea {
+.contact-grid form textarea,
+.modal-content form input,
+.modal-content form textarea {
     padding: 10px 12px;
     border: 2px solid gainsboro;
     width: 100%;
     border-radius: 4px;
 }
 
-.contact-grid form .input-grid {
+.contact-grid form .input-grid, .modal-content form .input-grid {
     display: grid;
     gap: 14px;
 }
 
-.contact-grid form button {
+.contact-grid form button,
+.modal-content form button {
     width: 100%;
     margin-top: 22px !important;
     padding: 12px 0;
@@ -728,7 +735,7 @@ header .nav-container button {
 }
 
 .expertise {
-    background: url("../images/bg-expertise.jpg") no-repeat center center;
+    background: url("../images/bg-expertise.avif") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     padding: 80px 5vw;
@@ -1020,7 +1027,7 @@ header .nav-container button {
 }
 
 footer{
-    background: url("../images/bg-footer.jpg") no-repeat;
+    background: url("../images/bg-footer.avif") no-repeat;
     background-size: cover;
     background-position: top left;
 }
@@ -1243,4 +1250,70 @@ footer p span{
         padding: 100px 10vw 50px 10vw;
         text-align: left;
     }
+
+    .modal-content {
+        padding: 30px !important;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    z-index: 10000;
+    background-color: #ffffff;
+    width: 500px;
+    max-width: 90%;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-40px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-content form .input-grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.modal.show .modal-overlay {
+    opacity: 1;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #888;
 }
