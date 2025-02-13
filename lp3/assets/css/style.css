@@ -706,7 +706,7 @@ header .nav-container button {
 .contact-grid form input:focus,
 .contact-grid form textarea:focus,
 .modal-content form input:focus,
-.modal-content form textarea:focus{
+.modal-content form textarea:focus {
     outline: none;
 }
 
@@ -720,7 +720,8 @@ header .nav-container button {
     border-radius: 4px;
 }
 
-.contact-grid form .input-grid, .modal-content form .input-grid {
+.contact-grid form .input-grid,
+.modal-content form .input-grid {
     display: grid;
     gap: 14px;
 }
@@ -748,7 +749,7 @@ header .nav-container button {
     font-weight: 600;
 }
 
-.expertise>p {
+.expertise>div>p {
     line-height: 1.8;
     color: #000;
     font-size: 15px;
@@ -756,7 +757,7 @@ header .nav-container button {
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .expertise .expertise-grid {
@@ -1026,13 +1027,13 @@ header .nav-container button {
     line-height: 1.5;
 }
 
-footer{
+footer {
     background: url("../images/bg-footer.avif") no-repeat;
     background-size: cover;
     background-position: top left;
 }
 
-footer p{
+footer p {
     padding: 80px 10vw 50px 10vw;
     text-align: center;
     font-size: 1rem;
@@ -1040,7 +1041,7 @@ footer p{
     color: var(--primary-white);
 }
 
-footer p span{
+footer p span {
     color: var(--primary-color);
 }
 
@@ -1215,7 +1216,8 @@ footer p span{
         font-size: .875rem;
     }
 
-    .confusion>h1, .confusion>h2 {
+    .confusion>h1,
+    .confusion>h2 {
         font-size: 30px;
         line-height: 1.5;
     }
@@ -1246,13 +1248,46 @@ footer p span{
         font-size: 1rem;
     }
 
-    footer p{
+    footer p {
         padding: 100px 10vw 50px 10vw;
         text-align: left;
     }
 
     .modal-content {
         padding: 30px !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    .hero-content {
+        padding-top: 0;
+        min-height: 100vh;
+    }
+}
+
+@media (min-width: 1500px) {
+    .hero-content {
+        max-width: 1420px;
+        column-gap: 80px;
+    }
+
+    .core-services-container,
+    .books,
+    .services,
+    .contact-grid,
+    .expertise>div,
+    .latest-books>div,
+    .confusion .brand-details,
+    footer p {
+        max-width: 1420px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+    }
+
+    .cta {
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }
 
@@ -1293,7 +1328,7 @@ footer p span{
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.modal-content form .input-grid{
+.modal-content form .input-grid {
     grid-template-columns: repeat(2, 1fr);
 }
 
