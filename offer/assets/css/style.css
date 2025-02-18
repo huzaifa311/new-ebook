@@ -133,11 +133,12 @@ header .nav-container button {
     font-size: 16px;
 }
 
-.hero-section .hero-content .hero-cta .toll-free {
+.hero-section .hero-content .hero-cta .contact-us {
     background-color: var(--primary-color);
     padding: 10px 10px;
     border-radius: 50px;
     color: black;
+    background-image: none;
 }
 
 .hero-section .hero-content .hero-bullet {
@@ -976,7 +977,10 @@ header .nav-container button {
 .confusion .brand-details {
     display: grid;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding: 50px 0;
 }
 
 .confusion .brand-details img {
@@ -1065,7 +1069,7 @@ footer p span {
     }
 
     header .nav-container button,
-    .hero-section .hero-content .hero-cta .toll-free {
+    .hero-section .hero-content .hero-cta .contact-us {
         padding: 10px 30px;
         font-size: 16px;
     }
