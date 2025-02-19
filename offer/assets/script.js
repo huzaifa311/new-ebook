@@ -20,7 +20,7 @@ async function onsubmission(e) {
   }
 
   try {
-    await fetch("http://localhost:3000/publishyourebook/offer", {
+    await fetch("https://form-submission-google-sheet.vercel.app/publishyourebook/offer", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
