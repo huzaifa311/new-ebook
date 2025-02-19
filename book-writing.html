@@ -13,7 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ebook Publishers | Book Writing</title>
     <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="icon" type="png" href="./assets/images/logo.png">
+    <link rel="icon" type="ico" href="./assets/images/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
@@ -25,9 +25,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHMXVSPH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <header
-        class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] md:pt-0 pt-8 md:px-0 px-4 !z-50">
-        <img src="./assets/images/logo-white.png" alt="logo" class="md:h-32 h-44" />
+<header
+class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] pt-6 md:px-0 px-4 !z-50">
+<img src="./assets/images/logo-white.png" alt="logo" class="w-40 object-contain">
         <nav class="hidden md:flex items-center !text-white">
             <div>
                 <a href="./index.html" class="ml-6">Home</a>
@@ -201,44 +201,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
             </div>
-            <form
+            <form id="signUpForm"
                 class="md:w-[70%] w-full mx-auto md:mr-auto md:mr-0 px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder rounded-xl relative text-white h-fit pb-[50px]">
                 <img src="/assets/images/home/formAbsolute.jpg" alt="Deep Water"
                     class="absolute md:-right-10 right-1 md:-top-8 -top-10 rotate-[22deg] h-28 object-contain">
-                <h1 class="text-2xl font-light w-[82%]">
+                <h1 class="text-2xl font-light w-[80%]">
                     Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span> Discount
                 </h1>
                 <div class="mt-5 space-y-4">
                     <div class="grid grid-cols-2 gap-3">
-                        <input type="text" placeholder="Full Name"
+                        <input type="text" name="fullName" placeholder="Full Name"
                             class="py-[9px] px-4 bg-white text-black rounded-[7px]">
-                        <input type="email" placeholder="Email Address"
+                        <input type="email" name="email" placeholder="Email Address"
                             class="py-[9px] px-4 bg-white text-black rounded-[7px]">
                     </div>
                     <div class="grid grid-cols-2 gap-3">
-                        <select class="py-[9px] px-4 bg-white text-black rounded-[7px]">
-                            <option value="select-your-service" disabled="" selected="">Select your Service</option>
+                        <select name="service" class="py-[9px] px-4 bg-white text-black rounded-[7px]">
+                            <option value="select-your-service" disabled selected>
+                                Select your Service
+                            </option>
                             <option value="ghostwriting-services">Ghostwriting Services</option>
                             <option value="book-editing-services">Book Editing Services</option>
-                            <option value="book-cover-design-services">Book Cover Design Services</option>
-                            <option value="ebook-cover-design-services">Ebook Cover Design Services</option>
+                            <option value="book-cover-design-services">
+                                Book Cover Design Services
+                            </option>
+                            <option value="ebook-cover-design-services">
+                                Ebook Cover Design Services
+                            </option>
                             <option value="book-publishing-services">Book Publishing Services</option>
                             <option value="book-marketing-services">Book Marketing Services</option>
                             <option value="ebook-writing-services">Ebook Writing Services</option>
-                            <option value="biography-writing-services">Biography Writing Services</option>
+                            <option value="biography-writing-services">
+                                Biography Writing Services
+                            </option>
                             <option value="memoir-writing-services">Memoir Writing Services</option>
                             <option value="book-printing-services">Book Printing Services</option>
                             <option value="video-book-services">Video Book Services</option>
                             <option value="audio-book-services">Audio Book Services</option>
                             <option value="author-website-services">Author Website Services</option>
-                            <option value="book-illustration-services">Book Illustration Services</option>
+                            <option value="book-illustration-services">
+                                Book Illustration Services
+                            </option>
                         </select>
-                        <input type="text" placeholder="Phone Number"
-                            class="py-[9px] px-4 bg-white text-black rounded-[7px]">
+                        <input type="text" name="phone" placeholder="Phone Number"
+                            class="py-[9px] px-4 bg-white text-black rounded-[7px]" />
                     </div>
-                    <textarea placeholder="Brief.." class="w-full py-[9px] px-5 bg-white text-black rounded-[7px]"
-                        rows="3"></textarea>
-                    <button type="submit" class="text-white gradientBg py-3 w-full rounded-lg">Sign Up</button>
+                    <textarea name="brief" placeholder="Brief.."
+                        class="w-full py-[9px] px-5 bg-white text-black rounded-[7px]" rows="3"></textarea>
+                    <button type="submit" class="text-white gradientBg py-3 w-full rounded-lg">
+                        Sign Up
+                    </button>
                 </div>
 
             </form>
@@ -812,10 +824,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h1 class="md:text-[40px] text-2xl font-[600] text-center">Subscribe To <span
                 class="text-[#3ebfc2]">Newsletter</span>
         </h1>
-        <div class="grid grid-cols-2 gap-3 bg-white rounded-lg items-center md:w-[80%] w-[92%] mx-auto md:p-3">
-            <input type="text" placeholder="Enter Your Email" class="py-4 px-2 text-black focus:outline-none">
-            <button class="text-white gradientBg h-full md:rounded-lg py-4">Subscribe</button>
-        </div>
+        <form id="newsletter" class="grid grid-cols-2 gap-3 bg-white rounded-lg items-center md:w-[80%] w-[92%] mx-auto md:p-3">
+            <input type="email" name="email" placeholder="Enter Your Email" class="py-4 px-2 text-black focus:outline-none">
+            <button type="submit" class="text-white gradientBg h-full md:rounded-lg py-4">Subscribe</button>
+        </form>
     </section>
 
     <section class="mt-28 mb-16">
@@ -1066,22 +1078,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
             </div>
-            <form class=" px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder rounded-xl relative">
+            <form id="footerForm" class="px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder rounded-xl relative">
                 <h1 class="text-2xl font-light w-[80%]">
                     Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span> Discount
                 </h1>
                 <div class="mt-5 space-y-4">
                     <div class="grid grid-cols-2 gap-4">
-                        <input type="text" placeholder="Full Name"
+                        <input name="name" type="text" placeholder="Full Name"
                             class="col-span-2 py-[13px] px-4 bg-white text-black rounded-[7px]">
-                        <input type="email" placeholder="Email Address"
+                        <input name="email" type="email" placeholder="Email Address"
                             class="py-[13px] px-4 bg-white text-black rounded-[7px] col-span-2">
-                        <input type="text" placeholder="Phone Number"
+                        <input name="phone" type="text" placeholder="Phone Number"
                             class="py-[13px] px-4 bg-white text-black rounded-[7px] col-span-2">
                     </div>
                     <div class="grid grid-cols-2 gap-4">
-                        <select class="py-[13px] px-4 bg-white text-black rounded-[7px]">
-                            <option value="select-your-service" disabled="" selected="">Select your Service</option>
+                        <select name="service" class="py-[13px] px-4 bg-white text-black rounded-[7px]">
+                            <option value="select-your-service" disabled selected>Select your Service</option>
                             <option value="ghostwriting-services">Ghostwriting Services</option>
                             <option value="book-editing-services">Book Editing Services</option>
                             <option value="book-cover-design-services">Book Cover Design Services</option>
@@ -1097,16 +1109,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <option value="author-website-services">Author Website Services</option>
                             <option value="book-illustration-services">Book Illustration Services</option>
                         </select>
-                        <select class="py-[13px] px-4 bg-white text-black rounded-[7px]">
-                            <option value="Budget..." disabled="" selected="">Budget...</option>
+                        <select name="budget" class="py-[13px] px-4 bg-white text-black rounded-[7px]">
+                            <option value="Budget..." disabled selected>Budget...</option>
                             <option value="$500 - $1000">$500 - $1,000</option>
-                            <option value="book-editing-services">$1,000 - $5,000</option>
+                            <option value="$1,000 - $5,000">$1,000 - $5,000</option>
                             <option value="$5,000 - $10,000">$5,000 - $10,000</option>
                             <option value="Others">Others</option>
                         </select>
 
                     </div>
-                    <textarea placeholder="Brief.." class="w-full py-[13px] px-5 bg-white text-black rounded-[7px]"
+                    <textarea name="brief" placeholder="Brief.." class="w-full py-[13px] px-5 bg-white text-black rounded-[7px]"
                         rows="3"></textarea>
                     <button type="submit" class="text-white gradientBg py-3 w-full rounded-lg">Sign Up</button>
                 </div>

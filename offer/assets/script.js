@@ -1,3 +1,40 @@
+document.getElementById("heroform").addEventListener("submit", onsubmission)
+document.getElementById("contactform").addEventListener("submit", onsubmission)
+document.getElementById("modalform").addEventListener("submit", onsubmission)
+
+async function onsubmission(e) {
+  e.preventDefault();
+
+  const name = e.target.name.value;
+  const email = e.target.email.value;
+  const phone = e.target.phone.value;
+  const message = e.target.message.value;
+
+  const objToSend = {
+    name,
+    email,
+    phone,
+    message,
+    submitted_from: "Landing Page",
+    submitted_at: new Date().toLocaleString()
+  }
+
+  try {
+    await fetch("http://localhost:3000/publishyourebook/offer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objToSend),
+    });
+    e.target.reset();
+    alert("Form Submitted Successfully");
+  } catch (error) {
+    console.error("Error during API call:", error);
+    alert("An error occurred while submitting the form. Please try again.");
+  }
+}
+
 const marquee = document.querySelector(".marquee");
 const clone = marquee.innerHTML;
 marquee.innerHTML += clone;
@@ -59,7 +96,7 @@ function openModal() {
 }
 
 function closeModal() {
-  modal.classList.remove("show"); 
+  modal.classList.remove("show");
   setTimeout(() => {
     modal.style.display = "none";
     document.body.style.overflowY = "visible"

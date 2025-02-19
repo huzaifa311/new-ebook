@@ -1,3 +1,107 @@
+if (document.getElementById("signUpForm")) {
+  document.getElementById("signUpForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const fullName = e.target.fullName.value;
+    const email = e.target.email.value;
+    const service = e.target.service.value;
+    const phone = e.target.phone.value;
+    const brief = e.target.brief.value;
+
+    const objToSend = {
+      name: fullName,
+      email,
+      service,
+      phone,
+      brief,
+      budget: "Not Provided",
+      submitted_at: new Date().toLocaleString()
+    }
+
+    try {
+      await fetch("https://form-submission-google-sheet.vercel.app/publishyourebook", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(objToSend),
+      });
+      e.target.reset();
+      alert("Form Submitted Successfully");
+    } catch (error) {
+      console.error("Error during API call:", error);
+      alert("An error occurred while submitting the form. Please try again.");
+    }
+
+  });
+}
+
+if (document.getElementById("footerForm")) {
+  document.getElementById("footerForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const service = e.target.service.value;
+    const phone = e.target.phone.value;
+    const brief = e.target.brief.value;
+    const budget = e.target.budget.value;
+
+    const objToSend = {
+      name,
+      email,
+      service,
+      phone,
+      brief,
+      budget,
+      submitted_at: new Date().toLocaleString()
+    }
+
+    try {
+      await fetch("https://form-submission-google-sheet.vercel.app/publishyourebook", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(objToSend),
+      });
+      e.target.reset();
+      alert("Form Submitted Successfully");
+    } catch (error) {
+      console.error("Error during API call:", error);
+      alert("An error occurred while submitting the form. Please try again.");
+    }
+
+  });
+}
+
+if (document.getElementById("newsletter")) {
+  document.getElementById("newsletter").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const objToSend = {
+      email: e.target.email.value,
+      submitted_at: new Date().toLocaleString()
+    }
+
+    try {
+      await fetch("https://form-submission-google-sheet.vercel.app/publishyourebook/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(objToSend),
+      });
+      e.target.reset();
+      alert("Form Submitted Successfully");
+    } catch (error) {
+      console.error("Error during API call:", error);
+      alert("An error occurred while submitting the form. Please try again.");
+    }
+
+  });
+}
+
 let mobileMenu = document.getElementById("mobileMenu");
 
 function handleMobileMenu() {
