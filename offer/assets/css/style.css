@@ -15,7 +15,8 @@ header .header-logo {
     object-fit: contain;
 }
 
-header .email-us, header .call-us {
+header .email-us,
+header .call-us {
     display: none;
 }
 
@@ -1074,7 +1075,8 @@ footer p span {
         font-size: 16px;
     }
 
-    header .email-us, header .call-us {
+    header .email-us,
+    header .call-us {
         display: inline;
     }
 
@@ -1254,7 +1256,7 @@ footer p span {
     }
 
     footer p {
-        padding: 100px 10vw 50px 10vw;
+        padding: 150px 5vw 50px 5vw;
         text-align: left;
     }
 
