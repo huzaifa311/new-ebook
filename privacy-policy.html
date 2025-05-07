@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook Publishers | Privacy Policy</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" type="ico" href="./assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHMXVSPH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header
+        class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] pt-6 md:px-0 px-4 !z-50">
+        <img src="./assets/images/logo.png" alt="logo" class="w-40 object-contain">
+        <nav class="hidden md:flex items-center">
+            <div>
+                <a href="./index.html" class="ml-6 pb-1 border-b border-b-[var(--theme)] text-[var(--theme)]">Home</a>
+            </div>
+            <div>
+                <a href="./about-us.html" class="ml-6">About Us</a>
+            </div>
+            <div class="relative !z-50 group">
+                <a href="#" class="ml-6 flex items-center">
+                    Services
+                    <i class="fa fa-angle-down ml-2"></i>
+                </a>
+                <!-- Dropdown Menu -->
+                <div
+                    class="absolute hidden group-hover:flex flex-col bg-white text-black shadow-lg rounded-md top-full left-0 !z-[99] w-[335px]">
+                    <a href="./professional-ghostwriting-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b">Ghostwriting</a>
+
+                    <a href="./book-editing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                        Editing</a>
+                    <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                        Cover Design</a>
+
+                    <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                        Writing</a>
+                    <a href="./book-marketing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                        Marketing</a>
+                    <a href="./biography-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Biography
+                        Writing</a>
+                    <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Memoir
+                        Writing</a>
+                    <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                        Printing</a>
+                    <a href="./book-trailer-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                        Trailer</a>
+                    <a href="./audiobook-publishing-services.html"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b">Audio Book</a>
+                    <a href="./author-website-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Author
+                        Website</a>
+                    <a href="./book-illustration-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                        Illustration</a>
+                </div>
+            </div>
+            <!-- <div>
+            <a href="./blogs.html" class="ml-6">Blog</a>
+        </div> -->
+            <div>
+                <a href="./contact-us.html" class="ml-6">Contact Us</a>
+            </div>
+        </nav>
+        <div class="md:flex hidden gap-2 items-center">
+            <button
+                class="gradientBg h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center !text-black">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border  rotate-90 !text-black">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="text-red-500 text-lg">Live Chat</div>
+                <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (607) 252-8999</a>
+            </div>
+        </div>
+
+        <div onclick="handleMobileMenu()"
+            class="flex md:hidden h-11 border-2 w-16 gradientBg justify-center items-center">
+            <i class="fa fa-bars text-xl" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div id="mobileMenu"
+        class="!h-0 !overflow-hidden !transition-all md:hidden !duration-700 w-[92%] left-[50%] right-[50%] -translate-x-[50%] absolute top-32 bg-[url(assets/images/home/menu-bg.jpg)] bg-cover bg-no-repeat bg-center rounded-lg text-black space-y-7">
+        <div class="pt-8">
+            <a href="./index.html" class="pl-6 pb-1 text-[var(--theme)]">Home</a>
+        </div>
+        <div>
+            <a href="./about-us.html" class="pl-6">About Us</a>
+        </div>
+        <div id="dropCont" class="relative !z-50 group">
+            <a href="#" class="pl-6 flex items-center">
+                Services
+                <i class="fa fa-angle-down ml-2"></i>
+            </a>
+            <!-- Dropdown Menu -->
+            <div id="dropMob"
+                class="absolute !hidden flex-col bg-black text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[90vw]">
+                <a href="./professional-ghostwriting-services.html"
+                    class="gradient2 pl-3 hoverbg py-[6px] border-b">Ghostwriting</a>
+                <a href="./ebook-writing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">EBook
+                    Writing</a>
+                <a href="./book-editing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                    Editing</a>
+                <a href="./book-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                    Cover Design</a>
+                <a href="./ebook-cover-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">EBook
+                    Cover Design</a>
+                <a href="./book-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                    Writing</a>
+                <a href="./book-marketing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                    Marketing</a>
+                <a href="./biography-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Biography
+                    Writing</a>
+                <a href="./memoir-writing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Memoir
+                    Writing</a>
+                <a href="./book-printing.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                    Printing</a>
+                <a href="./book-trailer-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                    Trailer</a>
+                <a href="./audiobook-publishing-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Audio
+                    Book</a>
+                <a href="./author-website-design.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Author
+                    Website</a>
+                <a href="./book-illustration-services.html" class="gradient2 pl-3 hoverbg py-[6px] border-b">Book
+                    Illustration</a>
+            </div>
+        </div>
+        <div>
+            <a href="./blogs.html" class="pl-6">Blog</a>
+        </div>
+        <div>
+            <a href="./contact-us.html" class="pl-6">Contact Us</a>
+        </div>
+
+        <div class="md:hidden flex gap-1 items-center mt-4 w-[95%] mx-auto">
+            <button
+                class="gradientBg h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center !text-black">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-black rotate-90">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between text-black">
+                <div class="text-red-500 text-lg">Live Chat</div>
+                <a href="https://wa.me/+14378262236" target="_blank" class="text-sm">+1 (607) 252-8999</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-white text-gray-800 py-12 px-6 md:px-20 mt-24">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-5xl font-bold text-[#0a6688] mb-4">Privacy Policy</h1>
+            <p class="text-sm text-gray-500 mb-8">Last updated: May 8, 2025</p>
+
+            <p class="mb-6">Welcome to <strong>Publish Your eBook</strong>. We are committed to protecting your privacy.
+                This Privacy Policy outlines how we collect, use, and safeguard your personal information when you visit
+                our website <a href="https://publishyourebook.com"
+                    class="text-[#3DBEBB] underline">https://publishyourebook.com</a>.</p>
+
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">1. Information We Collect</h2>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                        <li>Full Name</li>
+                        <li>Email Address</li>
+                        <li>Phone Number</li>
+                        <li>Billing and Shipping Address</li>
+                        <li>IP Address and Browser Data</li>
+                        <li>Information related to your eBook project (if applicable)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">2. How We Use Your Information</h2>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                        <li>Provide and deliver our eBook writing and publishing services</li>
+                        <li>Respond to your inquiries and support requests</li>
+                        <li>Process payments and send invoices</li>
+                        <li>Send promotional emails (if subscribed)</li>
+                        <li>Improve our website and customer service</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">3. Sharing Your Information</h2>
+                    <p class="mt-2 text-gray-700">We do not sell, trade, or rent your personal data to third parties.
+                        However, we may share information with:</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                        <li>Trusted third-party service providers who assist in operating our business</li>
+                        <li>Legal authorities if required by law</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">4. Cookies</h2>
+                    <p class="mt-2 text-gray-700">We use cookies to enhance your experience on our site. You can disable
+                        cookies through your browser settings, but this may affect some functionality of our website.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">5. Data Security</h2>
+                    <p class="mt-2 text-gray-700">We implement appropriate technical and organizational measures to
+                        protect your personal data against unauthorized access, alteration, or disclosure.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">6. Your Rights</h2>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                        <li>Access and update your personal information</li>
+                        <li>Request deletion of your data (subject to legal obligations)</li>
+                        <li>Opt-out of receiving marketing communications</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">7. External Links</h2>
+                    <p class="mt-2 text-gray-700">Our website may contain links to other websites. We are not
+                        responsible for the privacy practices of those websites.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">8. Changes to This Policy</h2>
+                    <p class="mt-2 text-gray-700">We reserve the right to update this Privacy Policy at any time.
+                        Changes will be posted on this page with an updated revision date.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#0a6688]">9. Contact Us</h2>
+                    <ul class="mt-2 space-y-1 text-gray-700">
+                        <li>Email: <a href="mailto:info@publishyourebook.com"
+                                class="text-[#3DBEBB] underline">info@publishyourebook.com</a></li>
+                        <li>Phone: +1 (607) 252-8999</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="w-[90%] md:w-[84%] mx-auto py-12">
+            <div class="mt-14 grid md:grid-cols-10 gap-4">
+                <div class="grid md:grid-cols-3 md:col-span-7 md:gap-0 gap-8">
+                    <div class="md:col-span-2">
+                        <h1 class="text-[var(--theme2)] text-2xl font-semibold">Services</h1>
+                        <ul class="mt-3 space-y-2 text-[14px] grid grid-cols-2 grid-rows-7 md:gap-x-0 gap-x-5">
+                            <a href="./professional-ghostwriting-services.html" class="mt-2">Ghostwriting</a>
+                            <a href="./book-editing-services.html">Book Editing</a>
+                            <a href="./book-cover-design.html">Book Cover Design</a>
+                            <a href="./ebook-cover-design.html">Ebook Cover Design</a>
+                            <a href="./book-writing.html">Book Writing</a>
+                            <a href="./book-marketing.html">Book Marketing</a>
+                            <a href="./ebook-writing-services.html">Ebook Writing Services</a>
+                            <a href="./biography-writing.html">Biography Writing</a>
+                            <a href="./memoir-writing.html">Memoir Writing</a>
+                            <a href="./book-printing.html">Book Printing</a>
+                            <a href="./audiobook-publishing-services.html">Audio Book</a>
+                            <a href="./author-website-design.html">Author Website</a>
+                            <a href="./book-illustration-services.html">Book Illustration</a>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h1 class="text-[var(--theme2)] text-2xl font-semibold">Company</h1>
+                            <ul class="mt-3 space-y-2 text-[14px]">
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h1 class="text-[var(--theme2)] text-2xl font-semibold">Policies</h1>
+                            <ul class="mt-3 space-y-2 text-[14px]">
+                                <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                                 <li><a href="./terms-and-conditions.html">Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 md:mt-0 mt-5">
+                    <h1 class="text-[var(--theme2)] text-2xl font-semibold">Contact Information</h1>
+                    <ul class="mt-5 space-y-3 text-[15px]">
+                        <a href="tel:+16072528999" class="flex gap-4 items-center">
+                            <img src="/assets/images/phone-icon-f.png" alt="Phone Icon">
+                            +1 (607) 252-8999
+                        </a>
+                        <a href="mailto:info@publishyourebook.com" class="flex gap-4 items-center">
+                            <img src="/assets/images/email-icon-f.png" alt="Email Icon">
+                            info@publishyourebook.com
+                        </a>
+                        <li class="flex gap-4 items-center">
+                            <img src="/assets/images/address-icon-f.png" alt="Address Icon">
+                            Head Office: 5900 Balcones Drive #7494, Austin, TX 78731
+                        </li>
+                        <!--  <li class="flex gap-4 items-center">
+                            <img src="/assets/images/address-icon-f.png" alt="Address Icon">
+                            Branch Office: 13209 Kirkglen Dr Austin, Tx 78727, USA
+                        </li> -->
+                    </ul>
+                    <img src="/assets/images/customer-review.png" alt="Review Platforms" class="mt-7">
+                </div>
+            </div>
+        </div>
+        <div class="md:mt-9 bg-[#3DBEC1] py-8">
+            <div class="grid md:grid-cols-2 md:gap-0 gap-11 w-[90%] md:w-[84%] mx-auto text-[14px]">
+                <p>Copyright © 2024 – 2025 Publish Your Ebook. All rights
+                    reserved.
+                    Powered by Design Pro Labs</p>
+                <img src="/assets/images/cards.png" alt="Cards" class="md:ml-auto">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
