@@ -344,13 +344,3 @@ tabButtons.forEach((button) => {
     button.classList.remove("text-gray-700", "bg-gray-300");
   });
 });
-
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-  s1.async = true;
-  s1.src = 'https://embed.tawk.to/67a26212825083258e1005a0/1ij94u6eq';
-  s1.charset = 'UTF-8';
-  s1.setAttribute('crossorigin', '*');
-  s0.parentNode.insertBefore(s1, s0);
-})();

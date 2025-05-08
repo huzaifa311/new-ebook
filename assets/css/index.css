@@ -365,3 +365,14 @@ body,
     text-transform: none;
     margin-bottom: 30px;
 }
+
+.whatsapp-fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 50;
+}
+
+.whatsapp-fixed img{
+    height: 75px;
+}
