@@ -344,3 +344,13 @@ tabButtons.forEach((button) => {
     button.classList.remove("text-gray-700", "bg-gray-300");
   });
 });
+
+const waText = document.getElementById("wa-icon-text");
+const waLogo = document.getElementById("wa-logo");
+
+if (waText && waLogo) {
+  const setText = (text) => { waText.textContent = text; };
+
+  waLogo.addEventListener("mouseenter", () => setText("Whatsapp"));
+  waLogo.addEventListener("mouseleave", () => setText("Contact Us"));
+}

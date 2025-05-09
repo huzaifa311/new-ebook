@@ -357,7 +357,8 @@ body,
     color: #0a6688;
 }
 
-.blog-bottom-main p, .blog-bottom-main li {
+.blog-bottom-main p,
+.blog-bottom-main li {
     color: #000000c4;
     font-family: "Poppins" !important;
     font-size: 16px;
@@ -366,13 +367,34 @@ body,
     margin-bottom: 30px;
 }
 
-.whatsapp-fixed{
+.whatsapp-fixed {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    left: 25px;
     z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.whatsapp-fixed img{
-    height: 75px;
+.whatsapp-fixed img {
+    height: 55px;
+}
+
+.whatsapp-fixed .wa-icon-text {
+    position: relative;
+    background-color: white;
+    padding: 3px 14px;
+    color: #555;
+}
+
+.whatsapp-fixed .wa-icon-text:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    border: solid transparent;
+    border-right-color: white;
+    border-width: 6px;
+    margin-top: -6px;
 }
