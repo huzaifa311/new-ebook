@@ -109,6 +109,7 @@ for (let i = 0; i < openModalBtns.length; i++) {
 
 closeModalBtn.addEventListener("click", closeModal);
 modalOverlay.addEventListener("click", closeModal);
+document.addEventListener("DOMContentLoaded", openModal)
 
 const waText = document.getElementById("wa-icon-text");
 const waLogo = document.getElementById("wa-logo");

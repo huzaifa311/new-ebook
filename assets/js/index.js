@@ -354,3 +354,67 @@ if (waText && waLogo) {
   waLogo.addEventListener("mouseenter", () => setText("Whatsapp"));
   waLogo.addEventListener("mouseleave", () => setText("Contact Us"));
 }
+
+async function onsubmission(e) {
+  e.preventDefault();
+
+  const name = e.target.name.value;
+  const email = e.target.email.value;
+  const phone = e.target.phone.value;
+  const message = e.target.message.value;
+
+  const objToSend = {
+    name,
+    email,
+    phone,
+    message,
+    submitted_from: "Home Page Popup",
+    submitted_at: new Date().toLocaleString()
+  }
+
+  try {
+    await fetch("https://form-submission-google-sheet.vercel.app/publishyourebook/offer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objToSend),
+    });
+    e.target.reset();
+    alert("Form Submitted Successfully");
+  } catch (error) {
+    console.error("Error during API call:", error);
+    alert("An error occurred while submitting the form. Please try again.");
+  }
+}
+
+document.getElementById("modalform").addEventListener("submit", onsubmission)
+
+const openModalBtns = document.getElementsByClassName("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modalOverlay = document.getElementById("modalOverlay");
+const modal = document.getElementById("myModal");
+
+function openModal() {
+  modal.style.display = "flex";
+  setTimeout(() => {
+    modal.classList.add("show");
+    document.body.style.overflowY = "hidden"
+  }, 10);
+}
+
+function closeModal() {
+  modal.classList.remove("show");
+  setTimeout(() => {
+    modal.style.display = "none";
+    document.body.style.overflowY = "visible"
+  }, 300);
+}
+
+for (let i = 0; i < openModalBtns.length; i++) {
+  openModalBtns[i].addEventListener("click", openModal);
+}
+
+closeModalBtn.addEventListener("click", closeModal);
+modalOverlay.addEventListener("click", closeModal);
+document.addEventListener("DOMContentLoaded", openModal)
