@@ -15,6 +15,10 @@
     --primary-color: #49DBD5;
     --primary-white: #FCFDFD;
     --primary-para: #555;
+    --theme: #3DBEBB;
+    --theme2: #0a6688;
+    --gradient: linear-gradient(315deg, #3ebfc2 0%, #0a6688 74%);
+    --gradient2: linear-gradient(90deg, rgba(62, 191, 194, 1) 0%, rgba(10, 102, 136, 1) 100%);
 }
 
 body {

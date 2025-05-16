@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
 
     <!-- Meta Pixel Code -->
@@ -95,7 +96,8 @@
                 </div>
                 <div class="hero-cta">
                     <button class="openModalBtn get-started">Get Started Now</button>
-                    <a target="_blank" href="https://wa.me/+18299635849" class="contact-us">Contact Us: +1 (829) 963-5849</a>
+                    <a target="_blank" href="https://wa.me/+18299635849" class="contact-us">Contact Us: +1 (829)
+                        963-5849</a>
                 </div>
             </div>
             <div class="form-container">
@@ -177,123 +179,106 @@
             </div>
         </div>
     </section>
-    <section class="books">
-        <div class="embla__container">
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book1.avif" alt="">
-                    <h3>Publishing</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
+    <section class="md:w-[79.4%] w-[90%] mx-auto mt-24">
+        <!-- Title -->
+        <h1 class="w-fit text-center md:text-[40px] text-3xl capitalize mx-auto font-[600]">
+            Take A Look at <span class="text-[var(--theme2)]">Our Portfolio</span>
+        </h1>
+        <p class="text-[16px] font-[400] text-center mt-2">At Publish Your Ebook, we find satisfaction in our extensive
+            portfolio, demonstrating our proficiency across a wide array of industries and niches.</p>
+
+        <!-- Tabs -->
+        <div class="mt-6 flex flex-wrap justify-center gap-4">
+            <button class="tab-button active px-6 py-3 text-white bg-[var(--theme)] rounded-l"
+                data-tab="fiction">Fiction</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300" data-tab="nonfiction">Non Fiction</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="biography">Biography</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="children">Children</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="Informative">Informative</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content mt-6">
+            <!-- Fiction Tab -->
+            <div id="fiction" class="tab-panel block">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="/assets/images/bookCover/1.webp" alt="Book 1" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/2.webp" alt="Book 2" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/3.webp" alt="Book 3" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/4.webp" alt="Book 4" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/5.webp" alt="Book 5" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/6.webp" alt="Book 1" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/7.webp" alt="Book 2" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/8.webp" alt="Book 3" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/9.webp" alt="Book 4" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/10.webp" alt="Book 5" class="rounded shadow-md h-full w-full">
                 </div>
             </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book2.avif" alt="">
-                    <h3>Proof Reading</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
+
+            <!-- Non Fiction Tab -->
+            <div id="nonfiction" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="/assets/images/bookCover/11.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/12.webp" alt="Book 7" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/13.webp" alt="Book 8" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/14.webp" alt="Book 9" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/15.webp" alt="Book 10" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/16.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/17.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/18.webp" alt="Book 7" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/19.webp" alt="Book 8" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/20.webp" alt="Book 9" class="rounded shadow-md h-full w-full">
                 </div>
             </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book3.avif" alt="">
-                    <h3>Author Website</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
+
+            <!-- Biography Tab -->
+            <div id="biography" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="/assets/images/bookCover/21.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/22.webp" alt="Book 7" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/23.webp" alt="Book 8" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/24.webp" alt="Book 9" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/25.webp" alt="Book 10" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/26.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/27.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/28.webp" alt="Book 7" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/29.webp" alt="Book 8" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/30.webp" alt="Book 9" class="rounded shadow-md h-full w-full">
                 </div>
             </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book4.webp" alt="">
-                    <h3>E-Book Writing</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
+
+            <!-- Children Tab -->
+            <div id="children" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="/assets/images/bookCover/31.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/32.webp" alt="Book 7" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/33.webp" alt="Book 8" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/34.webp" alt="Book 9" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/35.webp" alt="Book 10" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/36.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/37.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/38.webp" alt="Book 7" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/39.webp" alt="Book 8" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/40.webp" alt="Book 9" class="rounded shadow-md h-full w-full">
                 </div>
             </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book5.webp" alt="">
-                    <h3>Audio Book</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
-                </div>
-            </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book6.webp" alt="">
-                    <h3>Formatting</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
-                </div>
-            </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book7.webp" alt="">
-                    <h3>Article Writing</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
-                </div>
-            </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book8.webp" alt="">
-                    <h3>Ghost Writing</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
-                </div>
-            </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book9.avif" alt="">
-                    <h3>Editing</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
-                </div>
-            </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book10.webp" alt="">
-                    <h3>Clinton Cash</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
-                </div>
-            </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book11.webp" alt="">
-                    <h3>Book Video Trailer</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
-                </div>
-            </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book12.webp" alt="">
-                    <h3>Audio Book2</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
-                </div>
-            </div>
-            <div class="embla__slide">
-                <div class="embla_container">
-                    <img src="./assets/images/case-studies/book13.avif" alt="">
-                    <h3>Book Cover</h3>
-                    <p>Get in touch with our 24/7 available representatives now!</p>
-                    <button class="chat">Chat Now</button>
-                    <button class="avail">Avail 50% discount</button>
+
+            <!-- Informative Tab -->
+            <div id="Informative" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="/assets/images/bookCover/41.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/42.webp" alt="Book 7" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/43.webp" alt="Book 8" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/44.webp" alt="Book 9" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/45.webp" alt="Book 10" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/46.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/47.webp" alt="Book 6" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/48.webp" alt="Book 7" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/49.webp" alt="Book 8" class="rounded shadow-md h-full w-full">
+                    <img src="/assets/images/bookCover/50.webp" alt="Book 9" class="rounded shadow-md h-full w-full">
                 </div>
             </div>
         </div>
@@ -498,7 +483,7 @@
                     <img src="./assets/images/expertise/3.avif" alt="Book Marketing">
                     <h3>Book Marketing</h3>
                     <p>Stand out in a crowded market with strategic book promotion.
-                        We create custom marketing campaigns to boost visibility and 
+                        We create custom marketing campaigns to boost visibility and
                         sales.
                         From social media ads to author branding, we’ve got you covered.
                         Your book deserves more than just shelf space — it needs attention.</p>
@@ -508,7 +493,7 @@
                     <h3>Distribution</h3>
                     <p>Reach readers worldwide with our robust distribution network.
                         We place your book on Amazon, Barnes & Noble, and beyond.
-                        Whether digital or print, we ensure your book is available 
+                        Whether digital or print, we ensure your book is available
                         everywhere.
                         Expand your reach without lifting a finger.</p>
                 </div>
@@ -724,7 +709,7 @@
     </section>
     <section class="confusion">
         <h3>DO YOU HAVE ANY CONFUSION ABOUT PLACING AN ORDER?</h3>
-        <h1>Got questions? Our 
+        <h1>Got questions? Our
             experts are just one call away, ready to guide you!</h1>
         <div class="btn-container">
             <button class="contact openModalBtn">Contact us now</button>
@@ -760,7 +745,8 @@
         </div>
     </section>
     <footer>
-        <p>Copyrights © 2025 All Rights Reserved by <span>Publish Your Ebook</span>. All rights reserved by Wave Cloud</p>
+        <p>Copyrights © 2025 All Rights Reserved by <span>Publish Your Ebook</span>. All rights reserved by Wave Cloud
+        </p>
     </footer>
     <div class="whatsapp-fixed">
         <a id="wa-logo" href="https://wa.me/+18299635849" target="_blank">

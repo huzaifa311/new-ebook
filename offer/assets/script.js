@@ -120,3 +120,27 @@ if (waText && waLogo) {
   waLogo.addEventListener("mouseenter", () => setText("Whatsapp"));
   waLogo.addEventListener("mouseleave", () => setText("Contact Us"));
 }
+
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabPanels = document.querySelectorAll(".tab-panel");
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    console.log("ghgf");
+
+    // Remove active class from all buttons and panels
+    tabButtons.forEach((btn) => {
+      btn.classList.remove("active", "text-white", "bg-[var(--theme)]");
+      btn.classList.add("text-gray-700", "bg-gray-300");
+    });
+    tabPanels.forEach((panel) => panel.classList.add("hidden"));
+
+    // Add active class to the clicked button and corresponding panel
+    const targetPanel = document.getElementById(
+      button.getAttribute("data-tab")
+    );
+    targetPanel.classList.remove("hidden");
+    button.classList.add("active", "text-white", "bg-[var(--theme)]");
+    button.classList.remove("text-gray-700", "bg-gray-300");
+  });
+});
