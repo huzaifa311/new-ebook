@@ -1239,10 +1239,16 @@ footer p span {
         width: calc(100% - 24px);
     }
 
-    .confusion .brand-details p {
+    .confusion .brand-details .para {
         grid-column: span 5 / span 5;
         border-left: 1px solid #000;
         padding-left: 24px;
+    }
+
+    .confusion .brand-details .para .AuthorizeNetSeal img {
+        width: 300px;
+        object-fit: contain;
+        margin-top: 10px;
     }
 
     .confusion .brand-details .links {

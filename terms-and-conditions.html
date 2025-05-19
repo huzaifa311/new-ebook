@@ -293,7 +293,7 @@
                         <div class="flex gap-4 items-center">
                             <img src="/assets/images/phone-icon-f.png" alt="Phone Icon">
                             <div class="flex flex-col gap-y-2">
-                                <a href="tel:+18889149040">+1 (888) 914-9040</a>
+                                <a>+1 (888) 914-9040</a>
                                 
                             </div>
                         </div>
@@ -337,6 +337,36 @@
             <img src="./assets/images/whatsapp.svg" alt="whatsapp">
         </a>
         <div class="wa-icon-text" id="wa-icon-text">Contact Us</div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <span class="close-button" id="closeModalBtn">&times;</span>
+
+            <form id="modalform">
+                <h1>Get Started</h1>
+                <div class="input-grid">
+                    <div>
+                        <label for="name">Name: *</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email: *</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div>
+                    <label for="phone">Phone: *</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="message">Message: *</label>
+                    <textarea rows="4" type="text" name="message" id="message"></textarea>
+                </div>
+                <button type="submit" class="submitBtn">Book Your Success</button>
+            </form>
+        </div>
     </div>
 
 </body>

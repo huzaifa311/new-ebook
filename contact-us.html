@@ -87,7 +87,7 @@
         </nav>
         <div class="md:flex hidden gap-2 items-center">
             <button
-                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center openModalBtn">
                 Get Started Today
                 <i class="fa fa-angle-right"></i>
             </button>
@@ -158,7 +158,7 @@
 
         <div class="md:hidden flex gap-1 items-center mt-4 w-[95%] mx-auto">
             <button
-                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center openModalBtn">
                 Get Started Today
                 <i class="fa fa-angle-right"></i>
             </button>
@@ -186,7 +186,7 @@
                 </p>
                 <div class="md:flex hidden gap-2 items-center mt-7 justify-center">
                     <button
-                        class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center">
+                        class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center openModalBtn">
                         Get Started Today
                         <i class="fa fa-angle-right"></i>
                     </button>
@@ -213,7 +213,7 @@
                 <img src="./assets/images/contact-phone.png" alt="Phone Icon">
                 <div>
                     <h2 class="text-[32px] font-[500]">Call Us Now</h2>
-                    <h3 class="text-[14px]">Call Now: 737-910-3666</h3>
+                    <h3 class="text-[14px]">Call Now: +1 (888) 914-9040</h3>
                 </div>
             </div>
             <div
@@ -328,7 +328,7 @@
                         <div class="flex gap-4 items-center">
                             <img src="/assets/images/phone-icon-f.png" alt="Phone Icon">
                             <div class="flex flex-col gap-y-2">
-                                <a href="tel:+18889149040">+1 (888) 914-9040</a>
+                                <a>+1 (888) 914-9040</a>
                                 
                             </div>
                         </div>
@@ -372,6 +372,36 @@
             <img src="./assets/images/whatsapp.svg" alt="whatsapp">
         </a>
         <div class="wa-icon-text" id="wa-icon-text">Contact Us</div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <span class="close-button" id="closeModalBtn">&times;</span>
+
+            <form id="modalform">
+                <h1>Get Started</h1>
+                <div class="input-grid">
+                    <div>
+                        <label for="name">Name: *</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email: *</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div>
+                    <label for="phone">Phone: *</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="message">Message: *</label>
+                    <textarea rows="4" type="text" name="message" id="message"></textarea>
+                </div>
+                <button type="submit" class="submitBtn">Book Your Success</button>
+            </form>
+        </div>
     </div>
 
     <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js" defer></script>
