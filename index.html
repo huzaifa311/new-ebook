@@ -201,31 +201,29 @@
                     Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span> Discount
                 </h1>
                 <div class="mt-5 space-y-4">
+                    <input type="text" name="manuscript" placeholder="Do you've a manuscript ready? *"
+                        class="w-full py-[9px] px-5 bg-white text-black rounded-[7px]" />
                     <div class="grid grid-cols-2 gap-3">
-                        <input type="text" name="fullName" placeholder="Full Name"
+                        <input type="text" name="fullName" placeholder="Your Name"
                             class="py-[9px] px-4 bg-white text-black rounded-[7px]" />
                         <input type="email" name="email" placeholder="Email Address"
                             class="py-[9px] px-4 bg-white text-black rounded-[7px]" />
                     </div>
-                    <div class="grid grid-cols-2 gap-3">
-                        <select name="service" class="py-[9px] px-4 bg-white text-black rounded-[7px]">
-                            <option value="select-your-service" disabled selected>
-                                Which services do you need?
-                            </option>
-                            <option value="self-publishing">Self Publishing</option>
-                            <option value="editing">Editing</option>
-                            <option value="cover-design">Cover Design</option>
-                            <option value="illustration">Illustration</option>
-                            <option value="marketing">Marketing</option>
-                            <option value="distributor">Distributor</option>
-                            <option value="printing">Printing</option>
-                            <option value="book-writing">book writing</option>
-                        </select>
-                        <input type="text" name="phone" placeholder="Phone Number"
-                            class="py-[9px] px-4 bg-white text-black rounded-[7px]" />
-                    </div>
-                    <textarea name="brief" placeholder="Brief.."
-                        class="w-full py-[9px] px-5 bg-white text-black rounded-[7px]" rows="3"></textarea>
+                    <select name="service" class="w-full py-[9px] px-5 bg-white text-black rounded-[7px]">
+                        <option value="select-your-service" disabled selected>
+                            Which services do you need?
+                        </option>
+                        <option value="self-publishing">Self Publishing</option>
+                        <option value="editing">Editing</option>
+                        <option value="cover-design">Cover Design</option>
+                        <option value="illustration">Illustration</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="distributor">Distributor</option>
+                        <option value="printing">Printing</option>
+                        <option value="book-writing">book writing</option>
+                    </select>
+                    <input type="text" name="phone" placeholder="Phone Number"
+                        class="w-full py-[9px] px-5 bg-white text-black rounded-[7px]" />
                     <button type="submit" class="text-white gradientBg py-3 w-full rounded-lg">
                         Sign Up
                     </button>
@@ -1931,8 +1929,8 @@
             <form id="modalform">
                 <h1>Get Started</h1>
                 <div>
-                    <label for="manusript-ready">Do you've a manuscript ready? *</label>
-                    <input type="text" name="manusript-ready" id="phone">
+                    <label for="manusript">Do you've a manuscript ready? *</label>
+                    <input type="text" name="manusript" id="manuscript">
                 </div>
                 <div class="input-grid">
                     <div>

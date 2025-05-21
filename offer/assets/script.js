@@ -8,7 +8,7 @@ async function onsubmission(e) {
   const name = e.target.name.value;
   const email = e.target.email.value;
   const service = e.target.service.value;
-  const manuscript = e.target.manusript.value;
+  const manuscript = e.target.manuscript.value;
   const phone = e.target.phone.value;
 
   const objToSend = {
@@ -29,6 +29,8 @@ async function onsubmission(e) {
       body: JSON.stringify(objToSend),
     });
     e.target.reset();
+    console.log(objToSend);
+    
     alert("Form Submitted Successfully");
   } catch (error) {
     console.error("Error during API call:", error);
