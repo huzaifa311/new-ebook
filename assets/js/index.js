@@ -36,6 +36,7 @@ async function onsubmission(e) {
 
 document.getElementById("modalform").addEventListener("submit", onsubmission)
 document.getElementById("signUpForm").addEventListener("submit", onsubmission)
+document.getElementById("footerForm").addEventListener("submit", onsubmission)
 
 if (document.getElementById("newsletter")) {
   document.getElementById("newsletter").addEventListener("submit", async function (e) {
