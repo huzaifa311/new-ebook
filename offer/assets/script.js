@@ -7,15 +7,16 @@ async function onsubmission(e) {
 
   const name = e.target.name.value;
   const email = e.target.email.value;
+  const service = e.target.service.value;
+  const manuscript = e.target.manusript.value;
   const phone = e.target.phone.value;
-  const message = e.target.message.value;
 
   const objToSend = {
     name,
     email,
     phone,
-    message,
-    submitted_from: "Landing Page",
+    service,
+    manuscript,
     submitted_at: new Date().toLocaleString()
   }
 

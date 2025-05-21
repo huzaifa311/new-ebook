@@ -1128,6 +1128,10 @@ class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex just
 
             <form id="modalform">
                 <h1>Get Started</h1>
+                <div>
+                    <label for="manusript-ready">Do you've a manuscript ready? *</label>
+                    <input type="text" name="manusript-ready" id="phone">
+                </div>
                 <div class="input-grid">
                     <div>
                         <label for="name">Name: *</label>
@@ -1143,8 +1147,19 @@ class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex just
                     <input type="text" name="phone" id="phone">
                 </div>
                 <div>
-                    <label for="message">Message: *</label>
-                    <textarea rows="4" type="text" name="message" id="message"></textarea>
+                    <select name="service" class="py-[9px] px-4 bg-white text-black rounded-[7px]">
+                        <option value="select-your-service" disabled selected>
+                            Which services do you need?
+                        </option>
+                        <option value="self-publishing">Self Publishing</option>
+                        <option value="editing">Editing</option>
+                        <option value="cover-design">Cover Design</option>
+                        <option value="illustration">Illustration</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="distributor">Distributor</option>
+                        <option value="printing">Printing</option>
+                        <option value="book-writing">book writing</option>
+                    </select>
                 </div>
                 <button type="submit" class="submitBtn">Book Your Success</button>
             </form>

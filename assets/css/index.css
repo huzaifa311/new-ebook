@@ -410,6 +410,11 @@ body,
     margin-top: 16px;
 }
 
+.modal-content form select{
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
 .modal-content form input:focus,
 .modal-content form select:focus {
     outline: none;
