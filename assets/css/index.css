@@ -411,12 +411,12 @@ body,
 }
 
 .modal-content form input:focus,
-.modal-content form textarea:focus {
+.modal-content form select:focus {
     outline: none;
 }
 
 .modal-content form input,
-.modal-content form textarea {
+.modal-content form select {
     padding: 10px 12px;
     border: 2px solid gainsboro;
     width: 100%;
