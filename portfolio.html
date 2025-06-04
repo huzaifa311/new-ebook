@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MHMXVSPH');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publish Your Ebook | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="icon" type="ico" href="./assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHMXVSPH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header
+        class="md:w-[80vw] w-screen mx-auto py-2 bg-transparent absolute top-0 flex justify-between items-center left-[50%] right-[50%] -translate-x-[50%] pt-6 md:px-0 px-4 !z-50">
+        <a href="./index">
+            <img src="./assets/images/logo-white.png" alt="logo" class="w-40 object-contain">
+        </a>
+        <nav class="hidden md:flex items-center !text-white">
+            <div>
+                <a href="./index" class="ml-6">Home</a>
+            </div>
+            <div>
+                <a href="./about-us" class="ml-6">About
+                    Us</a>
+            </div>
+            <div class="relative !z-50 group">
+                <a href="#" class="ml-6 flex items-center">
+                    Services
+                    <i class="fa fa-angle-down ml-2"></i>
+                </a>
+                <!-- Dropdown Menu -->
+                <div
+                    class="absolute hidden group-hover:flex flex-col bg-white text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[335px]">
+                    <a href="./professional-ghostwriting-services"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
+
+                    <a href="./book-editing-services" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Editing</a>
+                    <a href="./book-cover-design" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Cover Design</a>
+
+                    <a href="./book-writing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Writing</a>
+                    <a href="./book-marketing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Marketing</a>
+                    <a href="./biography-writing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography
+                        Writing</a>
+                    <a href="./memoir-writing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir
+                        Writing</a>
+                    <a href="./book-printing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Printing</a>
+                    <a href="./book-trailer-services" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                        Trailer</a>
+                    <a href="./audiobook-publishing-services"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
+                    <a href="./author-website-design" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author
+                        Website</a>
+                    <a href="./book-illustration-services"
+                        class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Illustration</a>
+                </div>
+            </div>
+            <div>
+                <a href="./portfolio"
+                    class="ml-6 pb-1 border-b border-b-[var(--theme)] text-[var(--theme)]">Portfolio</a>
+            </div>
+            <div>
+                <a href="./contact-us" class="ml-6">Contact Us</a>
+            </div>
+        </nav>
+        <div class="md:flex hidden gap-2 items-center">
+            <button
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center openModalBtn">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-white rotate-90">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between text-white">
+                <div class="text-red-500 text-lg">Call Now</div>
+                <a class="text-sm">+1 (888) 914-9040</a>
+            </div>
+        </div>
+
+        <div onclick="handleMobileMenu()"
+            class="flex md:hidden h-11 border-2 w-16 gradientBg justify-center items-center">
+            <i class="fa fa-bars text-white text-xl" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div id="mobileMenu"
+        class="!h-0 !overflow-hidden !transition-all md:hidden !duration-700 w-[92%] left-[50%] right-[50%] -translate-x-[50%] absolute top-32 bg-[url(assets/images/home/menu-bg.jpg)] bg-cover bg-no-repeat bg-center rounded-lg text-black space-y-7">
+        <div class="pt-8">
+            <a href="./index" class="pl-6">Home</a>
+        </div>
+        <div>
+            <a href="./about-us" class="pl-6 pb-1 text-[var(--theme)]">About Us</a>
+        </div>
+        <div id="dropCont" class="relative !z-50 group">
+            <a href="#" class="pl-6 flex items-center">
+                Services
+                <i class="fa fa-angle-down ml-2"></i>
+            </a>
+            <!-- Dropdown Menu -->
+            <div id="dropMob"
+                class="absolute !hidden flex-col bg-black text-black shadow-lg rounded-md top-full left-0 !z-[99999999px] w-[90vw]">
+                <a href="./professional-ghostwriting-services"
+                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Ghostwriting</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook Writing</a>
+                <a href="#" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book Editing</a>
+                <a href="./book-cover-design" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Cover Design</a>
+                <a href="./ebook-cover-design" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">EBook
+                    Cover Design</a>
+                <a href="./book-writing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Writing</a>
+                <a href="./book-marketing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Marketing</a>
+                <a href="./biography-writing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Biography
+                    Writing</a>
+                <a href="./memoir-writing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Memoir
+                    Writing</a>
+                <a href="./book-printing" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Printing</a>
+                <a href="./book-trailer-services" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Trailer</a>
+                <a href="./audiobook-publishing-services"
+                    class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Audio Book</a>
+                <a href="./author-website-design" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Author
+                    Website</a>
+                <a href="./book-illustration-services" class="gradient2 pl-3 hoverbg py-[6px] border-b text-white">Book
+                    Illustration</a>
+            </div>
+        </div>
+        <div>
+            <a href="./portfolio" class="pl-6">Portfolio</a>
+        </div>
+        <div>
+            <a href="./contact-us" class="pl-6">Contact Us</a>
+        </div>
+
+        <div class="md:hidden flex gap-1 items-center mt-4 w-[95%] mx-auto">
+            <button
+                class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center openModalBtn">
+                Get Started Today
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-black rotate-90">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="flex flex-col justify-between text-black">
+                <div class="text-red-500 text-lg">Call Now</div>
+                <a class="text-sm">+1 (888) 914-9040</a>
+            </div>
+        </div>
+    </div>
+
+    <main
+        class="bg-[url(assets/images/About/about-banner-img.png)] !h-fit md:!max-h-[250dvh] md:!bg-center bg-no-repeat bg-cover pt-[173px] md:min-h-[130vh] min-h-[600px] flex justify-center aboutBanner">
+        <section class="md:w-[85%] w-[93%] md:mt-12">
+            <h1
+                class="text-[24px] md:text-[42px] font-[600] md:px-[22%] text-white text-center mb-6 leading-[30px] md:!leading-[48px]">
+                <span class="text-[var(--theme)] md:text-[38px]">Portfolio Speaks Volumes: </span>
+                Showcasing Excellence in Every Project
+            </h1>
+            <p class="text-white text-center font-[400] text-[12px] md:text-[14px] md:px-[15%]">
+                Explore the diverse range of biographies and eBooks we've crafted for our clients. Each project reflects
+                our commitment to quality, creativity, and personalized storytelling tailored to every unique vision.
+            </p>
+            <div class="flex gap-20 gap-5 flex-wrap items-center justify-center mt-8">
+                <button
+                    class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center openModalBtn">
+                    Get Started Today
+                    <i class="fa fa-angle-right"></i>
+                </button>
+                <div class="flex gap-2 items-center">
+                    <div class="flex justify-center items-center h-11 w-11 rounded-full border !text-white rotate-90">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex flex-col justify-between text-white">
+                        <div class="text-lg">Call Now</div>
+                        <a class="text-sm">+1 (888) 914-9040</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="md:w-[79.4%] w-[90%] mx-auto mt-24">
+        <!-- Title -->
+        <h1 class="w-fit text-center md:text-[40px] text-3xl capitalize mx-auto font-[600]">
+            Take A Look at <span class="text-[var(--theme2)]">Our Portfolio</span>
+        </h1>
+        <p class="text-[16px] font-[400] text-center mt-6 md:px-[10%]">At Publish Your Ebook, we find satisfaction in
+            our extensive
+            portfolio, demonstrating our proficiency across a wide array of industries and niches.</p>
+
+        <!-- Tabs -->
+        <div class="mt-8 flex justify-center flex-wrap gap-4">
+            <button class="tab-button active px-6 py-3 text-white bg-[var(--theme)] rounded-l"
+                data-tab="fiction">Fiction</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300" data-tab="nonfiction">Non Fiction</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="biography">Biography</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="children">Children</button>
+            <button class="tab-button px-6 py-3 text-gray-700 bg-gray-300 rounded-r"
+                data-tab="Informative">Informative</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content mt-6">
+            <!-- Fiction Tab -->
+            <div id="fiction" class="tab-panel block">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/1.webp" alt="Book 1"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/2.webp" alt="Book 2"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/3.webp" alt="Book 3"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/4.webp" alt="Book 4"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/5.webp" alt="Book 5"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/6.webp" alt="Book 1"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/7.webp" alt="Book 2"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/8.webp" alt="Book 3"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/9.webp" alt="Book 4"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/10.webp" alt="Book 5"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Non Fiction Tab -->
+            <div id="nonfiction" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/11.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/12.webp" alt="Book 7"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/13.webp" alt="Book 8"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/14.webp" alt="Book 9"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/15.webp" alt="Book 10"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/16.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/17.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/18.webp" alt="Book 7"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/19.webp" alt="Book 8"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/20.webp" alt="Book 9"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Biography Tab -->
+            <div id="biography" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/21.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/22.webp" alt="Book 7"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/23.webp" alt="Book 8"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/24.webp" alt="Book 9"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/25.webp" alt="Book 10"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/26.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/27.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/28.webp" alt="Book 7"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/29.webp" alt="Book 8"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/30.webp" alt="Book 9"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Children Tab -->
+            <div id="children" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/31.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/32.webp" alt="Book 7"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/33.webp" alt="Book 8"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/34.webp" alt="Book 9"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/35.webp" alt="Book 10"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/36.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/37.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/38.webp" alt="Book 7"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/39.webp" alt="Book 8"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/40.webp" alt="Book 9"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Informative Tab -->
+            <div id="Informative" class="tab-panel hidden">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/41.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/42.webp" alt="Book 7"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/43.webp" alt="Book 8"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/44.webp" alt="Book 9"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/45.webp" alt="Book 10"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/46.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/47.webp" alt="Book 6"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/48.webp" alt="Book 7"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/49.webp" alt="Book 8"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                    <a href="https://www.amazon.com/s?k=wavecloud+corporation&ref=nb_sb_noss" target="_blank">
+                        <img src="./assets/images/bookCover/50.webp" alt="Book 9"
+                            class="rounded shadow-md h-full w-full">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="pb-[150px] pt-[100px] flex items-center bg-[url(/assets/images/footer-form-bg.webp)] bg-right-bottom bg-cover bg-no-repeat text-white mt-20">
+        <div class="grid md:grid-cols-2 gap-14 items-center md:w-[75%] w-[90%] mx-auto">
+            <div>
+                <h1 class="text-3xl font-semibold">How it Works?</h1>
+                <ul class="mt-8 space-y-4">
+                    <li class="flex gap-4">
+                        <div class="!whitespace-nowrap">
+                            <span
+                                class="flex items-center rounded-full justify-center !h-[36px] !w-[36px] bg-[#4B4742]">1</span>
+                        </div>
+                        <p class="text-[14px]">
+                            We understand that you may be unsure about how to begin the process and what steps to take
+                            next. However, the procedure is straightforward since our 24-hour customer support team will
+                            call you and collaborate with you within the following 24 hours.
+                        </p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="!whitespace-nowrap">
+                            <span
+                                class="flex items-center rounded-full justify-center !h-[36px] !w-[36px] bg-[#4B4742]">2</span>
+                        </div>
+                        <p class="text-[14px]">
+                            After analysing your project, our project managers will discuss it with our specialist
+                            authors, and we will discuss the tone of your project with you.
+                        </p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="!whitespace-nowrap">
+                            <span
+                                class="flex items-center rounded-full justify-center !h-[36px] !w-[36px] bg-[#4B4742]">3</span>
+                        </div>
+                        <p class="text-[14px]">
+                            We will work on your project scope and deliver it in a timely manner once you have agreed on
+                            the fundamental elements and tone of the project.
+                        </p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="!whitespace-nowrap">
+                            <span
+                                class="flex items-center rounded-full justify-center !h-[36px] !w-[36px] bg-[#4B4742]">4</span>
+                        </div>
+                        <p class="text-[14px]">
+                            The next step will be your consent to begin writing the first chapter, and you will be in
+                            continual communication with us.
+                        </p>
+                    </li>
+                </ul>
+                <div class="flex md:gap-20 gap-2 items-center mt-10">
+                    <button
+                        class="gradientBg text-white h-[50px] w-[170px] justify-center rounded-xl text-sm flex gap-1 items-center openModalBtn">
+                        Get Started Today
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+                    <div class="flex gap-2 items-center">
+                        <div
+                            class="flex justify-center items-center h-11 w-11 rounded-full border border-white !text-white rotate-90">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="flex flex-col justify-between text-white">
+                            <div class="text-lg">Call Now</div>
+                            <a class="text-sm">+1 (888) 914-9040</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="footerForm" class="px-6 pt-6 pb-[50px] bg-[#041318] gradientBorder rounded-xl relative">
+                <h1 class="text-2xl font-light w-[80%] text-white">
+                    Sign Up Now to <span class="text-[var(--theme)]">Get 50%</span> Discount
+                </h1>
+                <div class="mt-5 space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input name="manuscript" type="text" placeholder="Do you've a manuscript ready?"
+                            class="col-span-2 py-[13px] px-4 bg-white text-black rounded-[7px]">
+                        <input name="name" type="text" placeholder="Your Name"
+                            class="col-span-2 py-[13px] px-4 bg-white text-black rounded-[7px]">
+                        <input name="email" type="email" placeholder="Email Address"
+                            class="py-[13px] px-4 bg-white text-black rounded-[7px] col-span-2">
+                        <input name="phone" type="text" placeholder="Phone Number"
+                            class="py-[13px] px-4 bg-white text-black rounded-[7px] col-span-2">
+                    </div>
+                    <select name="service" class="py-[13px] px-4 bg-white text-black rounded-[7px] w-full">
+                        <option value="select-your-service" disabled selected>Which services do you need?</option>
+                        <option value="self-publishing">Self Publishing</option>
+                        <option value="editing">Editing</option>
+                        <option value="cover-design">Cover Design</option>
+                        <option value="illustration">Illustration</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="distribution">Distribution</option>
+                        <option value="printing">Printing</option>
+                        <option value="book-writing">Book Writing</option>
+                    </select>
+
+                    <button type="submit" class="text-white gradientBg py-3 w-full rounded-lg">Sign Up</button>
+                </div>
+                <img src="/assets/images/home/formAbsolute.jpg" alt="Deep Water"
+                    class="absolute md:-right-8 -right-1 -top-8 rotate-[22deg] h-28 object-contain">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="w-[90%] md:w-[84%] mx-auto py-12">
+            <div class="mt-14 grid md:grid-cols-10 gap-4">
+                <div class="grid md:grid-cols-3 md:col-span-7 md:gap-0 gap-8">
+                    <div class="md:col-span-2">
+                        <h1 class="text-[var(--theme2)] text-2xl font-semibold">Services</h1>
+                        <ul class="mt-3 space-y-2 text-[14px] grid grid-cols-2 grid-rows-7 md:gap-x-0 gap-x-5">
+                            <a href="./professional-ghostwriting-services" class="mt-2">Ghostwriting</a>
+                            <a href="./book-editing-services">Book Editing</a>
+                            <a href="./book-cover-design">Book Cover Design</a>
+                            <a href="./ebook-cover-design">Ebook Cover Design</a>
+                            <a href="./book-writing">Book Writing</a>
+                            <a href="./book-marketing">Book Marketing</a>
+                            <a href="./ebook-writing-services">Ebook Writing Services</a>
+                            <a href="./biography-writing">Biography Writing</a>
+                            <a href="./memoir-writing">Memoir Writing</a>
+                            <a href="./book-printing">Book Printing</a>
+                            <a href="./audiobook-publishing-services">Audio Book</a>
+                            <a href="./author-website-design">Author Website</a>
+                            <a href="./book-illustration-services">Book Illustration</a>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h1 class="text-[var(--theme2)] text-2xl font-semibold">Company</h1>
+                            <ul class="mt-3 space-y-2 text-[14px]">
+                                <li><a href="./about-us">About Us</a></li>
+                                <li><a href="./contact-us">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h1 class="text-[var(--theme2)] text-2xl font-semibold">Policies</h1>
+                            <ul class="mt-3 space-y-2 text-[14px]">
+                                <li><a href="./privacy-policy">Privacy Policy</a></li>
+                                <li><a href="./terms-and-conditions">Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 md:mt-0 mt-5">
+                    <h1 class="text-[var(--theme2)] text-2xl font-semibold">Contact Information</h1>
+                    <ul class="mt-5 space-y-3 text-[15px]">
+                        <div class="flex gap-4 items-center">
+                            <img src="/assets/images/phone-icon-f.png" alt="Phone Icon">
+                            <div class="flex flex-col gap-y-2">
+                                <a>+1 (888) 914-9040</a>
+                            </div>
+                        </div>
+                        <a href="mailto:info@publishyourebook.com" class="flex gap-4 items-center">
+                            <img src="/assets/images/email-icon-f.png" alt="Email Icon">
+                            info@publishyourebook.com
+                        </a>
+                        <li class="flex gap-4 items-center">
+                            <img src="/assets/images/address-icon-f.png" alt="Address Icon">
+                            Head Office: 5900 Balcones Drive #7494, Austin, TX 78731
+                        </li>
+                    </ul>
+                    <img src="/assets/images/customer-review.png" alt="Review Platforms" class="mt-7">
+                </div>
+            </div>
+        </div>
+        <div class="md:mt-9 bg-[#3DBEC1] py-8">
+            <div class="grid md:grid-cols-2 md:gap-0 gap-11 text-white w-[90%] md:w-[84%] mx-auto text-[14px]">
+                <p>Copyright © 2024 – 2025 Publish Your Ebook. All rights
+                    reserved.
+                    Powered by Wave Cloud</p>
+                <div class="flex items-center gap-6 md:ml-auto">
+                    <!-- (c) 2005, 2025. Authorize.Net is a registered trademark of CyberSource Corporation -->
+                    <div class="AuthorizeNetSeal">
+                        <script type="text/javascript"
+                            language="javascript">var ANS_customer_id = "f8da7abc-9c69-4c4d-9f0e-0daf40e3f1c7";</script>
+                        <script type="text/javascript" language="javascript"
+                            src="//verify.authorize.net:443/anetseal/seal.js"></script>
+                    </div>
+                    <img src="/assets/images/cards.png" alt="Cards" class="object-contain">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="whatsapp-fixed">
+        <a id="wa-logo" href="https://wa.me/+18299635849" target="_blank">
+            <img src="./assets/images/whatsapp.svg" alt="whatsapp">
+        </a>
+        <div class="wa-icon-text" id="wa-icon-text">Contact Us</div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <span class="close-button" id="closeModalBtn">&times;</span>
+
+            <form id="modalform">
+                <h1>Get Started</h1>
+                <div>
+                    <label for="manuscript">Do you've a manuscript ready? *</label>
+                    <input type="text" name="manuscript" id="manuscript">
+                </div>
+                <div class="input-grid">
+                    <div>
+                        <label for="name">Name: *</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email: *</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div>
+                    <label for="phone">Phone: *</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div>
+                    <select name="service" class="py-[9px] px-4 bg-white text-black rounded-[7px]">
+                        <option value="select-your-service" disabled selected>
+                            Which services do you need?
+                        </option>
+                        <option value="book-writing">Book Writing</option>
+                        <option value="self-publishing">Self Publishing</option>
+                        <option value="editing">Editing</option>
+                        <option value="cover-design">Cover Design</option>
+                        <option value="illustration">Illustration</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="distribution">Distribution</option>
+                        <option value="printing">Printing</option>
+                    </select>
+                </div>
+                <button type="submit" class="submitBtn">Book Your Success</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/swiper.js" defer></script>
+
+    <script src="assets/js/index.js" defer></script>
+</body>
+
+</html>
